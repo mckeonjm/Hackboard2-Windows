@@ -1,0 +1,42 @@
+This pin mapping data for the Hackboard2 is from a card that came with my Hackboard2.  It has not been electrically verified.
+
+Pin1 - 3.3V Power
+Pin2 - 5V Power
+Pin3 - GPIO 2 (SDA)
+Pin4 - 5V
+Pin5 - GPIO 3 (SCL)
+Pin6 - Ground
+Pin7 - GPIO 4 (GPCLK0)
+Pin8 - GPIO 14 (TXD)
+Pin9 - Ground
+Pin10 - GPIO 15 (RXD)
+Pin11 - GPIO 17
+Pin12 - GPIO 18 (PCM_CLK)
+Pin13 - GPIO 27
+Pin14 - Ground
+Pin15 - GPIO 22
+Pin16 - GPIO 23
+Pin17 - 3.3V Power
+Pin18 - GPIO 24
+Pin19 - GPIO 10 (MOSI-GPC3)
+Pin20 - Ground
+Pin21 - GPIO 9 (MISO_GPC5)
+Pin22 - GPIO 25
+Pin23 - GPIO 11 (SCK_GPA6)
+Pin24 - GPIO 8 (CE0)
+Pin25 - Ground
+Pin26 - GPIO 7 (CE1)
+Pin27 - GPIO 0 (ID_SD)
+Pin28 - GPIO 1 (ID_SC)
+Pin29 - GPIO 5
+Pin30 - Ground
+Pin31 - GPIO 6
+Pin32 - GPIO 12 (PWM0)
+Pin33 - GPIO 13 (PWM1)
+Pin34 - Ground
+Pin35 - GPIO 19 (PCM_FS)
+Pin36 - GPIO 16
+Pin37 - GPIO 26
+Pin38 - GPIO 20 (PCM_DIN)
+Pin39 - Ground
+Pin40 - GPIO 21 (PCM_DOUT)
