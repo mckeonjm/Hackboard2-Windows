@@ -1,0 +1,29 @@
+# Python environments, caches, and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+*.egg-info/
+build/
+dist/
+
+# .NET and Visual Studio output
+[Bb]in/
+[Oo]bj/
+.vs/
+TestResults/
+*.user
+*.suo
+*.nupkg
+*.snupkg
+
+# Local hardware captures and machine-specific data
+/Research/local/
+.env
+.env.local
+Thumbs.db
+Desktop.ini
