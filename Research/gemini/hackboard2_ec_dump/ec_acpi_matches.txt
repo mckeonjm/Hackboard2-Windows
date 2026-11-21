@@ -1,0 +1,83 @@
+88-    Name (PMBS, 0x0400)
+89-    Name (PMLN, 0x80)
+90-    Name (SMIP, 0xB2)
+91-    Name (GPBS, 0x0500)
+92-    Name (GPLN, 0x40)
+93:    Name (APCB, 0xFEC00000)
+94-    Name (APCL, 0x1000)
+95-    Name (RCRB, 0xFED1C000)
+96-    Name (RCRL, 0x4000)
+97-    Name (HPTC, 0xFED1F404)
+98-    Name (SSEN, Zero)
+--
+7310-        Device (GPO1)
+7311-        {
+7312-            Name (_ADR, Zero)  // _ADR: Address
+7313-            Name (_HID, "INT3453")  // _HID: Hardware ID
+7314-            Name (_CID, "INT3453")  // _CID: Compatible ID
+7315:            Name (_DDN, "General Purpose Input/Output (GPIO) Controller - Northwest")  // _DDN: DOS Device Name
+7316-            Name (_UID, One)  // _UID: Unique ID
+7317-            Name (RBUF, ResourceTemplate ()
+7318-            {
+7319-                Memory32Fixed (ReadWrite,
+7320-                    0x00000000,         // Address Base
+--
+7348-        Device (GPO0)
+7349-        {
+7350-            Name (_ADR, Zero)  // _ADR: Address
+7351-            Name (_HID, "INT3453")  // _HID: Hardware ID
+7352-            Name (_CID, "INT3453")  // _CID: Compatible ID
+7353:            Name (_DDN, "General Purpose Input/Output (GPIO) Controller - North")  // _DDN: DOS Device Name
+7354-            Name (_UID, 0x02)  // _UID: Unique ID
+7355-            Name (LINK, "\\_SB.GPO0")
+7356-            Name (RBUF, ResourceTemplate ()
+7357-            {
+7358-                Memory32Fixed (ReadWrite,
+--
+7400-        Device (GPO2)
+7401-        {
+7402-            Name (_ADR, Zero)  // _ADR: Address
+7403-            Name (_HID, "INT3453")  // _HID: Hardware ID
+7404-            Name (_CID, "INT3453")  // _CID: Compatible ID
+7405:            Name (_DDN, "General Purpose Input/Output (GPIO) Controller - Audio")  // _DDN: DOS Device Name
+7406-            Name (_UID, 0x03)  // _UID: Unique ID
+7407-            Name (RBUF, ResourceTemplate ()
+7408-            {
+7409-                Memory32Fixed (ReadWrite,
+7410-                    0x00000000,         // Address Base
+--
+7438-        Device (GPO3)
+7439-        {
+7440-            Name (_ADR, Zero)  // _ADR: Address
+7441-            Name (_HID, "INT3453")  // _HID: Hardware ID
+7442-            Name (_CID, "INT3453")  // _CID: Compatible ID
+7443:            Name (_DDN, "General Purpose Input/Output (GPIO) Controller - SCC")  // _DDN: DOS Device Name
+7444-            Name (_UID, 0x04)  // _UID: Unique ID
+7445-            Name (RBUF, ResourceTemplate ()
+7446-            {
+7447-                Memory32Fixed (ReadWrite,
+7448-                    0x00000000,         // Address Base
+--
+11678-
+11679-    Scope (_SB.PCI0.SBRG)
+11680-    {
+11681-        Device (H_EC)
+11682-        {
+11683:            Name (_HID, EisaId ("PNP0C09") /* Embedded Controller Device */)  // _HID: Hardware ID
+11684-            Name (ECFG, Zero)
+11685-            Name (WIBT, Zero)
+11686-            Name (_UID, One)  // _UID: Unique ID
+11687-            Name (APST, Zero)
+11688-            Name (ECON, One)
+--
+11760-                    Offset (0x24), 
+11761-                    B2SS,   8
+11762-                }
+11763-            }
+11764-
+11765:            OperationRegion (ECF2, EmbeddedControl, Zero, 0xFF)
+11766-            Field (ECF2, ByteAcc, Lock, Preserve)
+11767-            {
+11768-                XXX0,   8, 
+11769-                XXX1,   8, 
+11770-                XXX2,   8, 

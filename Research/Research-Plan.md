@@ -4,6 +4,10 @@
 
 For this Hackboard 2 board revision, which controller and driver own the signals on the 40-pin header, and can an ordinary Windows desktop application access a verified subset through a deployable interface?
 
+The header orientation and power rails have been bench-checked. Detailed electrical validation is deferred while we identify a software control path. Resume bench work when a candidate backend is ready to test, and verify signal limits before driving or stimulating a line.
+
+Proceed through independent investigation. The owner reports that Hackboard support is no longer responsive. A vendor response or factory Debian image is optional evidence rather than a project dependency.
+
 ## Starting evidence
 
 - The [supplied card transcription](Hackboard2-GPIO-pinout.txt) gives physical pin numbers and Raspberry Pi-style signal labels. Pins 19, 21, and 23 also carry `GPC3`, `GPC5`, and `GPA6` suffixes. Treat these as leads and trace them to a controller before interpreting their numbering.
@@ -22,6 +26,7 @@ For this Hackboard 2 board revision, which controller and driver own the signals
 - Follow the vendor and campaign support trail for a production schematic, verified pin table, driver bundle, factory Linux image, Python package, and sample. Record source, date, board revision, and image checksums where available.
 - If a trustworthy image is available, inspect it offline for Python package metadata, GPIO examples, kernel modules, udev rules, and service configuration. Identify what the package actually calls. If a live Linux session is needed, coordinate a reboot and use removable media while keeping the internal Windows disk unmounted.
 - Inventory kernel version, ACPI devices, pinctrl information and GPIO chip labels, line names, offsets, and consumers. Use `gpiodetect` and `gpioinfo` where available. A generic live image can help identify the controller. Factory package claims require evidence from the factory image or vendor materials. [Linux GPIO character device API](https://docs.kernel.org/userspace-api/gpio/chardev.html) · [Official Python bindings](https://libgpiod.readthedocs.io/en/v2.3.2/python_api.html)
+- The [live Linux collector](collect_linux_gpio.sh) can run on this same board from a live session. Copy it onto separate writable media, boot the live system without installing it, and keep the internal Windows disk unmounted. From the writable media run `sudo sh collect_linux_gpio.sh > hackboard-linux-gpio.txt 2>&1`. Copy the report into `Research/local/` when back in Windows. The collector uses installed tools and existing debugfs data, and works with reduced output when either is unavailable. It enumerates metadata without requesting lines or changing pin direction or values.
 
 ## 3. Correlate the map and validate one line
 

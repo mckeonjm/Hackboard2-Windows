@@ -1,0 +1,160 @@
+File appears to be binary: found 49 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT1, Length 0xB1 (177) bytes
+ACPI: SSDT 0x0000000000000000 0000B1 (v01 Intel_ ADebTabl 00001000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT1.dsl - 1376 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 3786 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT10, Length 0x286F (10351) bytes
+ACPI: SSDT 0x0000000000000000 00286F (v02 SaSsdt SaSsdt   00003000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT10.dsl - 72418 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 4187 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT2, Length 0x3FDD (16349) bytes
+ACPI: SSDT 0x0000000000000000 003FDD (v02 INTEL  DptfTab  00000003 BRXT 0100000D)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT2.dsl - 85940 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 5954 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT3, Length 0x4C2A (19498) bytes
+ACPI: SSDT 0x0000000000000000 004C2A (v02 INTEL  RVPRtd3  00000003 BRXT 0100000D)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT3.dsl - 129798 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 429 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT4, Length 0xC8F (3215) bytes
+ACPI: SSDT 0x0000000000000000 000C8F (v02 INTEL  UsbCTabl 00000003 BRXT 0100000D)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT4.dsl - 11175 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 1005 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT5, Length 0x9FF (2559) bytes
+ACPI: SSDT 0x0000000000000000 0009FF (v01 Intel_ Platform 00001000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT5.dsl - 19321 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 754 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT6, Length 0x4B4 (1204) bytes
+ACPI: SSDT 0x0000000000000000 0004B4 (v02 PmRef  Cpu0Ist  00003000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT6.dsl - 9434 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 490 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT7, Length 0x775 (1909) bytes
+ACPI: SSDT 0x0000000000000000 000775 (v02 CpuRef CpuSsdt  00003000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT7.dsl - 9771 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 385 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT8, Length 0x35F (863) bytes
+ACPI: SSDT 0x0000000000000000 00035F (v02 PmRef  Cpu0Tst  00003000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT8.dsl - 9382 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+
+File appears to be binary: found 166 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file SSDT9, Length 0x1E6 (486) bytes
+ACPI: SSDT 0x0000000000000000 0001E6 (v02 PmRef  ApTst    00003000 INTL 20160930)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    SSDT9.dsl - 4392 bytes
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20250404
+Copyright (c) 2000 - 2025 Intel Corporation
+

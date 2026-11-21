@@ -23,6 +23,7 @@ TestResults/
 
 # Local hardware captures and machine-specific data
 /Research/local/
+/Research/bios/
 .env
 .env.local
 Thumbs.db

@@ -1,0 +1,7 @@
+sudo apt update && sudo apt install -y flashrom
+
+sudo flashrom -p internal -o hackboard-flash-probe.log
+
+sudo flashrom -p internal --ifd -i bios -o hackboard-flash-read.log -r hackboard-bios.bin
+
+sudo flashrom -p internal --ifd -i fd -i reg5 -o hackboard-flash-reg5.log -r hackboard-fd-reg5.bin

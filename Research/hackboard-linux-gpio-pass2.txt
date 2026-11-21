@@ -1,0 +1,852 @@
+
+=== Kernel and distribution ===
+Linux 6.12.107+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29) x86_64
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+IMAGE_ID=live
+BUILD_ID=20260912T075541Z
+
+=== ACPI device bindings ===
+INT3453:00
+  path: \_SB_.GPO1
+  hid: INT3453
+  uid: 1
+  status: 15
+INT3453:01
+  path: \_SB_.GPO0
+  hid: INT3453
+  uid: 2
+  status: 15
+INT3453:02
+  path: \_SB_.GPO2
+  hid: INT3453
+  uid: 3
+  status: 15
+INT3453:03
+  path: \_SB_.GPO3
+  hid: INT3453
+  uid: 4
+  status: 15
+PNP0C09:00
+  path: \_SB_.PCI0.SBRG.H_EC
+  hid: PNP0C09
+  uid: 1
+  status: 15
+  driver: ../../../../../../bus/acpi/drivers/ec
+
+=== gpiodetect ===
+gpiodetect (libgpiod) v2.2.1
+Copyright (C) 2017-2023 Bartosz Golaszewski
+License: GPL-2.0-or-later
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+gpiochip0 [INT3453:00] (80 lines)
+gpiochip1 [INT3453:01] (80 lines)
+gpiochip2 [INT3453:02] (20 lines)
+gpiochip3 [INT3453:03] (35 lines)
+
+=== gpioinfo ===
+gpioinfo (libgpiod) v2.2.1
+Copyright (C) 2017-2023 Bartosz Golaszewski
+License: GPL-2.0-or-later
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+gpiochip0 - 80 lines:
+	line   0:	unnamed         	input
+	line   1:	unnamed         	input
+	line   2:	unnamed         	input
+	line   3:	unnamed         	input
+	line   4:	unnamed         	input
+	line   5:	unnamed         	input
+	line   6:	unnamed         	input
+	line   7:	unnamed         	input
+	line   8:	unnamed         	input
+	line   9:	unnamed         	input
+	line  10:	unnamed         	input
+	line  11:	unnamed         	input
+	line  12:	unnamed         	input
+	line  13:	unnamed         	input
+	line  14:	unnamed         	input
+	line  15:	unnamed         	input
+	line  16:	unnamed         	input
+	line  17:	unnamed         	input
+	line  18:	unnamed         	input
+	line  19:	unnamed         	input
+	line  20:	unnamed         	input
+	line  21:	unnamed         	input
+	line  22:	unnamed         	input
+	line  23:	unnamed         	input
+	line  24:	unnamed         	input
+	line  25:	unnamed         	input
+	line  26:	unnamed         	input
+	line  27:	unnamed         	output
+	line  28:	unnamed         	output
+	line  29:	unnamed         	input
+	line  30:	unnamed         	input
+	line  31:	unnamed         	input
+	line  32:	unnamed         	input
+	line  33:	unnamed         	input
+	line  34:	unnamed         	output
+	line  35:	unnamed         	output
+	line  36:	unnamed         	input
+	line  37:	unnamed         	input
+	line  38:	unnamed         	input
+	line  39:	unnamed         	output
+	line  40:	unnamed         	output
+	line  41:	unnamed         	input
+	line  42:	unnamed         	input
+	line  43:	unnamed         	input
+	line  44:	unnamed         	input
+	line  45:	unnamed         	input
+	line  46:	unnamed         	input
+	line  47:	unnamed         	input
+	line  48:	unnamed         	input
+	line  49:	unnamed         	input
+	line  50:	unnamed         	input
+	line  51:	unnamed         	input
+	line  52:	unnamed         	input
+	line  53:	unnamed         	input
+	line  54:	unnamed         	input
+	line  55:	unnamed         	input
+	line  56:	unnamed         	input
+	line  57:	unnamed         	input
+	line  58:	unnamed         	input
+	line  59:	unnamed         	input
+	line  60:	unnamed         	input
+	line  61:	unnamed         	input
+	line  62:	unnamed         	input
+	line  63:	unnamed         	input
+	line  64:	unnamed         	input
+	line  65:	unnamed         	input
+	line  66:	unnamed         	output
+	line  67:	unnamed         	input
+	line  68:	unnamed         	input
+	line  69:	unnamed         	input
+	line  70:	unnamed         	input
+	line  71:	unnamed         	input
+	line  72:	unnamed         	input
+	line  73:	unnamed         	input
+	line  74:	unnamed         	input
+	line  75:	unnamed         	input
+	line  76:	unnamed         	input
+	line  77:	unnamed         	input
+	line  78:	unnamed         	input
+	line  79:	unnamed         	input
+gpiochip1 - 80 lines:
+	line   0:	unnamed         	input
+	line   1:	unnamed         	input
+	line   2:	unnamed         	input
+	line   3:	unnamed         	input
+	line   4:	unnamed         	input
+	line   5:	unnamed         	input
+	line   6:	unnamed         	input
+	line   7:	unnamed         	input
+	line   8:	unnamed         	input
+	line   9:	unnamed         	input
+	line  10:	unnamed         	input
+	line  11:	unnamed         	input
+	line  12:	unnamed         	input
+	line  13:	unnamed         	input
+	line  14:	unnamed         	input
+	line  15:	unnamed         	input
+	line  16:	unnamed         	input
+	line  17:	unnamed         	input
+	line  18:	unnamed         	input
+	line  19:	unnamed         	input
+	line  20:	unnamed         	input
+	line  21:	unnamed         	input
+	line  22:	unnamed         	input
+	line  23:	unnamed         	input
+	line  24:	unnamed         	input
+	line  25:	unnamed         	input
+	line  26:	unnamed         	input
+	line  27:	unnamed         	input
+	line  28:	unnamed         	input
+	line  29:	unnamed         	input
+	line  30:	unnamed         	input
+	line  31:	unnamed         	input
+	line  32:	unnamed         	input
+	line  33:	unnamed         	input
+	line  34:	unnamed         	input
+	line  35:	unnamed         	input
+	line  36:	unnamed         	input
+	line  37:	unnamed         	input
+	line  38:	unnamed         	input
+	line  39:	unnamed         	input
+	line  40:	unnamed         	input
+	line  41:	unnamed         	input
+	line  42:	unnamed         	output
+	line  43:	unnamed         	input
+	line  44:	unnamed         	input
+	line  45:	unnamed         	input
+	line  46:	unnamed         	input
+	line  47:	unnamed         	input
+	line  48:	unnamed         	input
+	line  49:	unnamed         	input
+	line  50:	unnamed         	input
+	line  51:	unnamed         	input
+	line  52:	unnamed         	input
+	line  53:	unnamed         	input
+	line  54:	unnamed         	input
+	line  55:	unnamed         	input
+	line  56:	unnamed         	input
+	line  57:	unnamed         	input
+	line  58:	unnamed         	output
+	line  59:	unnamed         	output
+	line  60:	unnamed         	output
+	line  61:	unnamed         	input
+	line  62:	unnamed         	input
+	line  63:	unnamed         	output
+	line  64:	unnamed         	input
+	line  65:	unnamed         	input
+	line  66:	unnamed         	input
+	line  67:	unnamed         	output
+	line  68:	unnamed         	output
+	line  69:	unnamed         	output
+	line  70:	unnamed         	output
+	line  71:	unnamed         	input
+	line  72:	unnamed         	input
+	line  73:	unnamed         	input
+	line  74:	unnamed         	input
+	line  75:	unnamed         	input
+	line  76:	unnamed         	input
+	line  77:	unnamed         	input
+	line  78:	unnamed         	input
+	line  79:	unnamed         	input
+gpiochip2 - 20 lines:
+	line   0:	unnamed         	input
+	line   1:	unnamed         	output
+	line   2:	unnamed         	input
+	line   3:	unnamed         	input
+	line   4:	unnamed         	input
+	line   5:	unnamed         	input
+	line   6:	unnamed         	input
+	line   7:	unnamed         	output
+	line   8:	unnamed         	input
+	line   9:	unnamed         	output
+	line  10:	unnamed         	input
+	line  11:	unnamed         	input
+	line  12:	unnamed         	input
+	line  13:	unnamed         	input
+	line  14:	unnamed         	input
+	line  15:	unnamed         	input
+	line  16:	unnamed         	input
+	line  17:	unnamed         	input
+	line  18:	unnamed         	output
+	line  19:	unnamed         	input
+gpiochip3 - 35 lines:
+	line   0:	unnamed         	input
+	line   1:	unnamed         	input
+	line   2:	unnamed         	input
+	line   3:	unnamed         	input
+	line   4:	unnamed         	input
+	line   5:	unnamed         	input
+	line   6:	unnamed         	input
+	line   7:	unnamed         	input
+	line   8:	unnamed         	input
+	line   9:	unnamed         	input
+	line  10:	unnamed         	output
+	line  11:	unnamed         	input
+	line  12:	unnamed         	input
+	line  13:	unnamed         	output
+	line  14:	unnamed         	input
+	line  15:	unnamed         	input
+	line  16:	unnamed         	input
+	line  17:	unnamed         	input
+	line  18:	unnamed         	input
+	line  19:	unnamed         	input
+	line  20:	unnamed         	input
+	line  21:	unnamed         	input
+	line  22:	unnamed         	input
+	line  23:	unnamed         	input
+	line  24:	unnamed         	input
+	line  25:	unnamed         	input
+	line  26:	unnamed         	input
+	line  27:	unnamed         	input
+	line  28:	unnamed         	input
+	line  29:	unnamed         	input
+	line  30:	unnamed         	input
+	line  31:	unnamed         	input
+	line  32:	unnamed         	input
+	line  33:	unnamed         	input
+	line  34:	unnamed         	input
+
+=== GPIO character devices ===
+crw------- 1 root root 254, 0 Nov 19 20:00 /dev/gpiochip0
+crw------- 1 root root 254, 1 Nov 19 20:00 /dev/gpiochip1
+crw------- 1 root root 254, 2 Nov 19 20:00 /dev/gpiochip2
+crw------- 1 root root 254, 3 Nov 19 20:00 /dev/gpiochip3
+
+=== GPIO debug summary ===
+gpiochip0: GPIOs 512-591, parent: platform/INT3453:00, INT3453:00:
+
+gpiochip1: GPIOs 592-671, parent: platform/INT3453:01, INT3453:01:
+
+gpiochip2: GPIOs 672-691, parent: platform/INT3453:02, INT3453:02:
+
+gpiochip3: GPIOs 692-726, parent: platform/INT3453:03, INT3453:03:
+
+=== Serial-bus bindings ===
+i2c/i2c-0
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:24
+i2c/i2c-1
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:25
+i2c/i2c-10
+  name: i915 gmbus dpc
+i2c/i2c-11
+  name: i915 gmbus misc
+i2c/i2c-12
+  name: AUX C/DDI C/PHY C
+i2c/i2c-2
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:26
+i2c/i2c-3
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:27
+i2c/i2c-4
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:28
+i2c/i2c-5
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:29
+i2c/i2c-6
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2a
+i2c/i2c-7
+  name: Synopsys DesignWare I2C adapter
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2b
+i2c/i2c-8
+  name: SMBus I801 adapter at f040
+i2c/i2c-9
+  name: i915 gmbus dpb
+serial-base/dw-apb-uart.10:0
+  driver: /sys/bus/serial-base/drivers/ctrl
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2e
+serial-base/dw-apb-uart.10:0.0
+  driver: /sys/bus/serial-base/drivers/port
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2e
+serial-base/dw-apb-uart.11:0
+  driver: /sys/bus/serial-base/drivers/ctrl
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2f
+serial-base/dw-apb-uart.11:0.0
+  driver: /sys/bus/serial-base/drivers/port
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2f
+serial-base/dw-apb-uart.8:0
+  driver: /sys/bus/serial-base/drivers/ctrl
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2c
+serial-base/dw-apb-uart.8:0.0
+  driver: /sys/bus/serial-base/drivers/port
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2c
+serial-base/dw-apb-uart.9:0
+  driver: /sys/bus/serial-base/drivers/ctrl
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2d
+serial-base/dw-apb-uart.9:0.0
+  driver: /sys/bus/serial-base/drivers/port
+  firmware_node: /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2d
+
+=== Serial device nodes ===
+crw-rw---- 1 root dialout 4, 64 Nov 19 20:00 /dev/ttyS0
+crw-rw---- 1 root dialout 4, 65 Nov 19 20:00 /dev/ttyS1
+crw-rw---- 1 root dialout 4, 66 Nov 19 20:00 /dev/ttyS2
+crw-rw---- 1 root dialout 4, 67 Nov 19 20:00 /dev/ttyS3
+
+=== Pinctrl ownership and mux state ===
+
+--- INT3453:00/pins ---
+registered pins: 80
+pin 0 (TCK) 0:INT3453:00 mode 1 0x44000700 0x00c01000 0x00000000 [LOCKED, ACPI]
+pin 1 (TRST_B) 1:INT3453:00 mode 1 0x44000700 0x00c01000 0x00000000 [LOCKED, ACPI]
+pin 2 (TMS) 2:INT3453:00 mode 1 0x44000700 0x00c03000 0x00000000 [LOCKED, ACPI]
+pin 3 (TDI) 3:INT3453:00 mode 1 0x44000700 0x00c03000 0x00000000 [LOCKED, ACPI]
+pin 4 (TDO) 4:INT3453:00 mode 1 0x44000700 0x00c03000 0x00000000 [LOCKED, ACPI]
+pin 5 (JTAGX) 5:INT3453:00 GPIO 0x44000300 0x00c3c000 0x00000000
+pin 6 (CX_PREQ_B) 6:INT3453:00 mode 1 0x44000402 0x00c3f300 0x00000000 [ACPI]
+pin 7 (CX_PRDY_B) 7:INT3453:00 mode 1 0x44000402 0x00c3f300 0x00000000 [ACPI]
+pin 8 (GPIO_8) 8:INT3453:00 GPIO 0x04000300 0x0003c032 0x00000000
+pin 9 (GPIO_9) 9:INT3453:00 GPIO 0x04000300 0x0003c033 0x00000000
+pin 10 (GPIO_10) 10:INT3453:00 GPIO 0x04000300 0x0003c034 0x00000000
+pin 11 (GPIO_11) 11:INT3453:00 GPIO 0x04000300 0x0003c035 0x00000000
+pin 12 (GPIO_12) 12:INT3453:00 GPIO 0x04000300 0x0003c036 0x00000000
+pin 13 (GPIO_13) 13:INT3453:00 GPIO 0x44000300 0x0003c037 0x00000000
+pin 14 (GPIO_14) 14:INT3453:00 GPIO 0x44000300 0x0003c038 0x00000000
+pin 15 (GPIO_15) 15:INT3453:00 GPIO 0x44000300 0x0003c039 0x00000000
+pin 16 (GPIO_16) 16:INT3453:00 GPIO 0x44000300 0x0003c03a 0x00000000
+pin 17 (GPIO_17) 17:INT3453:00 GPIO 0x44000300 0x0003c03b 0x00000000
+pin 18 (GPIO_18) 18:INT3453:00 GPIO 0x44000300 0x0003c03c 0x00000000
+pin 19 (GPIO_19) 19:INT3453:00 GPIO 0x42100102 0x0002733d 0x00000000
+pin 20 (GPIO_20) 20:INT3453:00 GPIO 0x44000300 0x0003c03e 0x00000000
+pin 21 (GPIO_21) 21:INT3453:00 mode 2 0x44000802 0x0000303f 0x00000000 [ACPI]
+pin 22 (GPIO_22) 22:INT3453:00 mode 2 0x44000800 0x00027040 0x00000000 [ACPI]
+pin 23 (GPIO_23) 23:INT3453:00 mode 2 0x44000802 0x00003041 0x00000000 [ACPI]
+pin 24 (GPIO_24) 24:INT3453:00 GPIO 0x44000300 0x0003c042 0x00000000
+pin 25 (GPIO_25) 25:INT3453:00 GPIO 0x44000300 0x0003c043 0x00000000
+pin 26 (ISH_GPIO_0) 26:INT3453:00 GPIO 0x40800100 0x00024044 0x00000000
+pin 27 (ISH_GPIO_1) 27:INT3453:00 GPIO 0x44000201 0x00003045 0x00000000 [ACPI]
+pin 28 (ISH_GPIO_2) 28:INT3453:00 GPIO 0x44000201 0x00003246 0x00000800 [ACPI]
+pin 29 (ISH_GPIO_3) 29:INT3453:00 GPIO 0x44000102 0x00023147 0x00000000
+pin 30 (ISH_GPIO_4) 30:INT3453:00 GPIO 0x40900102 0x0003f048 0x00000000 [ACPI]
+pin 31 (ISH_GPIO_5) 31:INT3453:00 GPIO 0x40900102 0x0003f049 0x00000000 [ACPI]
+pin 32 (ISH_GPIO_6) 32:INT3453:00 GPIO 0x44000100 0x0003d24a 0x00000000 [ACPI]
+pin 33 (ISH_GPIO_7) 33:INT3453:00 GPIO 0x40900102 0x0003f04b 0x00000000 [ACPI]
+pin 34 (ISH_GPIO_8) 34:INT3453:00 GPIO 0x44000201 0x0003f34c 0x00000000 [ACPI]
+pin 35 (ISH_GPIO_9) 35:INT3453:00 GPIO 0x44000201 0x0003f34d 0x00000000 [ACPI]
+pin 36 (GPIO_36) 36:INT3453:00 GPIO 0x44000300 0x0003c34e 0x00000000 [ACPI]
+pin 37 (GPIO_37) 37:INT3453:00 GPIO 0x44000300 0x0003c04f 0x00000000
+pin 38 (GPIO_38) 38:INT3453:00 GPIO 0x42880102 0x0003f350 0x00000000 [ACPI]
+pin 39 (GPIO_39) 39:INT3453:00 GPIO 0x44000201 0x0003f351 0x00000000
+pin 40 (GPIO_40) 40:INT3453:00 GPIO 0x44000201 0x0003f352 0x00000000 [ACPI]
+pin 41 (GPIO_41) 41:INT3453:00 GPIO 0x44000300 0x0003c053 0x00000000
+pin 42 (GP_INTD_DSI_TE1) 42:INT3453:00 mode 1 0x44000700 0x00001054 0x00000000 [ACPI]
+pin 43 (GP_INTD_DSI_TE2) 43:INT3453:00 mode 1 0x44000700 0x00001055 0x00000800 [ACPI]
+pin 44 (USB_OC0_B) 44:INT3453:00 mode 1 0x44000402 0x00003356 0x00000000 [ACPI]
+pin 45 (USB_OC1_B) 45:INT3453:00 mode 1 0x44000402 0x00003357 0x00000000 [ACPI]
+pin 46 (DSI_I2C_SDA) 46:INT3453:00 GPIO 0x44000300 0x0003c058 0x00000000
+pin 47 (DSI_I2C_SCL) 47:INT3453:00 GPIO 0x44000300 0x0003c059 0x00000000
+pin 48 (PMC_I2C_SDA) 48:INT3453:00 mode 1 0x44000402 0x0003e75a 0x00000000 [ACPI]
+pin 49 (PMC_I2C_SCL) 49:INT3453:00 mode 1 0x44000402 0x0003e75b 0x00000000 [ACPI]
+pin 50 (LPSS_I2C0_SDA) 50:INT3453:00 mode 1 0x44000402 0x0002275c 0x00000000 [ACPI]
+pin 51 (LPSS_I2C0_SCL) 51:INT3453:00 mode 1 0x44000402 0x0002275d 0x00000000 [ACPI]
+pin 52 (LPSS_I2C1_SDA) 52:INT3453:00 GPIO 0x44000300 0x0003c05e 0x00000000
+pin 53 (LPSS_I2C1_SCL) 53:INT3453:00 GPIO 0x44000300 0x0003c05f 0x00000000
+pin 54 (LPSS_I2C2_SDA) 54:INT3453:00 GPIO 0x44000300 0x0003c060 0x00000000
+pin 55 (LPSS_I2C2_SCL) 55:INT3453:00 GPIO 0x44000300 0x0003c061 0x00000000
+pin 56 (LPSS_I2C3_SDA) 56:INT3453:00 GPIO 0x44000300 0x0003c062 0x00000000
+pin 57 (LPSS_I2C3_SCL) 57:INT3453:00 GPIO 0x44000300 0x0003c063 0x00000000
+pin 58 (LPSS_I2C4_SDA) 58:INT3453:00 mode 1 0x44000402 0x00022764 0x00000000 [ACPI]
+pin 59 (LPSS_I2C4_SCL) 59:INT3453:00 mode 1 0x44000402 0x00022765 0x00000000 [ACPI]
+pin 60 (LPSS_UART0_RXD) 60:INT3453:00 mode 1 0x44000402 0x00023366 0x00000000 [ACPI]
+pin 61 (LPSS_UART0_TXD) 61:INT3453:00 mode 1 0x44000400 0x00023367 0x00000000 [ACPI]
+pin 62 (LPSS_UART0_RTS_B) 62:INT3453:00 GPIO 0x44000300 0x0003c068 0x00000000
+pin 63 (LPSS_UART0_CTS_B) 63:INT3453:00 GPIO 0x44000300 0x0003c069 0x00000000
+pin 64 (LPSS_UART2_RXD) 64:INT3453:00 mode 1 0x44000402 0x0002336a 0x00000000 [ACPI]
+pin 65 (LPSS_UART2_TXD) 65:INT3453:00 mode 1 0x44000400 0x0002336b 0x00000000 [ACPI]
+pin 66 (LPSS_UART2_RTS_B) 66:INT3453:00 GPIO 0x44000201 0x0000336c 0x00000000 [ACPI]
+pin 67 (LPSS_UART2_CTS_B) 67:INT3453:00 GPIO 0x44840102 0x0002036d 0x00000000 [ACPI]
+pin 68 (PMC_SPI_FS0) 68:INT3453:00 GPIO 0x44000300 0x0003c06e 0x00000000
+pin 69 (PMC_SPI_FS1) 69:INT3453:00 GPIO 0x44000300 0x0003c06f 0x00000000
+pin 70 (PMC_SPI_FS2) 70:INT3453:00 GPIO 0x44000300 0x0003c070 0x00000000
+pin 71 (PMC_SPI_RXD) 71:INT3453:00 GPIO 0x44000300 0x0003c071 0x00000000
+pin 72 (PMC_SPI_TXD) 72:INT3453:00 GPIO 0x44000300 0x0003c072 0x00000000
+pin 73 (PMC_SPI_CLK) 73:INT3453:00 GPIO 0x44000300 0x0003c073 0x00000000
+pin 74 (THERMTRIP_B) 74:INT3453:00 mode 1 0x44000400 0x0003f300 0x00000000 [ACPI]
+pin 75 (PROCHOT_B) 75:INT3453:00 mode 1 0x44000702 0x00003000 0x00000000 [LOCKED, ACPI]
+pin 76 (EMMC_RST_B) 76:INT3453:00 not available
+pin 77 (GPIO_212) 77:INT3453:00 GPIO 0x44000102 0x0001f375 0x00000000 [ACPI]
+pin 78 (GPIO_213) 78:INT3453:00 GPIO 0x44000100 0x0001d376 0x00000000 [ACPI]
+pin 79 (GPIO_214) 79:INT3453:00 GPIO 0x44000101 0x0001d377 0x00000000 [ACPI]
+
+--- INT3453:00/gpio-ranges ---
+GPIO ranges handled:
+0: INT3453:00 GPIOS [512 - 543] PINS [0 - 31]
+32: INT3453:00 GPIOS [544 - 575] PINS [32 - 63]
+64: INT3453:00 GPIOS [576 - 591] PINS [64 - 79]
+
+--- INT3453:00/pinmux-pins ---
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (TCK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (TRST_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (TMS): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (TDI): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (TDO): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (JTAGX): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (CX_PREQ_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (CX_PRDY_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (GPIO_8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (GPIO_9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (GPIO_10): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (GPIO_11): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 12 (GPIO_12): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 13 (GPIO_13): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (GPIO_14): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 15 (GPIO_15): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (GPIO_16): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 17 (GPIO_17): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 18 (GPIO_18): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (GPIO_19): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 20 (GPIO_20): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 21 (GPIO_21): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 22 (GPIO_22): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 23 (GPIO_23): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 24 (GPIO_24): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 25 (GPIO_25): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 26 (ISH_GPIO_0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 27 (ISH_GPIO_1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 28 (ISH_GPIO_2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 29 (ISH_GPIO_3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 30 (ISH_GPIO_4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 31 (ISH_GPIO_5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 32 (ISH_GPIO_6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 33 (ISH_GPIO_7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 34 (ISH_GPIO_8): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 35 (ISH_GPIO_9): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 36 (GPIO_36): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 37 (GPIO_37): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 38 (GPIO_38): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 39 (GPIO_39): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 40 (GPIO_40): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 41 (GPIO_41): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 42 (GP_INTD_DSI_TE1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 43 (GP_INTD_DSI_TE2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 44 (USB_OC0_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 45 (USB_OC1_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 46 (DSI_I2C_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 47 (DSI_I2C_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 48 (PMC_I2C_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 49 (PMC_I2C_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 50 (LPSS_I2C0_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 51 (LPSS_I2C0_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 52 (LPSS_I2C1_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 53 (LPSS_I2C1_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 54 (LPSS_I2C2_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 55 (LPSS_I2C2_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 56 (LPSS_I2C3_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 57 (LPSS_I2C3_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 58 (LPSS_I2C4_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 59 (LPSS_I2C4_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 60 (LPSS_UART0_RXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 61 (LPSS_UART0_TXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 62 (LPSS_UART0_RTS_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 63 (LPSS_UART0_CTS_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 64 (LPSS_UART2_RXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 65 (LPSS_UART2_TXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 66 (LPSS_UART2_RTS_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 67 (LPSS_UART2_CTS_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 68 (PMC_SPI_FS0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 69 (PMC_SPI_FS1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 70 (PMC_SPI_FS2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 71 (PMC_SPI_RXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 72 (PMC_SPI_TXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 73 (PMC_SPI_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 74 (THERMTRIP_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 75 (PROCHOT_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 76 (EMMC_RST_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 77 (GPIO_212): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 78 (GPIO_213): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 79 (GPIO_214): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+--- INT3453:01/pins ---
+registered pins: 80
+pin 0 (SVID0_ALERT_B) 0:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 1 (SVID0_DATA) 1:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 2 (SVID0_CLK) 2:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 3 (LPSS_SPI_0_CLK) 3:INT3453:01 mode 1 0x44000400 0x0003d232 0x00000000 [ACPI]
+pin 4 (LPSS_SPI_0_FS0) 4:INT3453:01 mode 1 0x44000400 0x0003d233 0x00000000 [ACPI]
+pin 5 (LPSS_SPI_0_FS1) 5:INT3453:01 mode 3 0x44000c02 0x0003d034 0x00000800 [ACPI]
+pin 6 (LPSS_SPI_0_RXD) 6:INT3453:01 mode 1 0x44000400 0x0003d235 0x00000000 [ACPI]
+pin 7 (LPSS_SPI_0_TXD) 7:INT3453:01 mode 1 0x44000400 0x0003d236 0x00000800 [ACPI]
+pin 8 (LPSS_SPI_2_CLK) 8:INT3453:01 GPIO 0x44000100 0x00001037 0x00000000 [ACPI]
+pin 9 (LPSS_SPI_2_FS0) 9:INT3453:01 GPIO 0x44000300 0x00001038 0x00000000 [ACPI]
+pin 10 (LPSS_SPI_2_FS1) 10:INT3453:01 GPIO 0x44000300 0x00001039 0x00000800 [ACPI]
+pin 11 (LPSS_SPI_2_FS2) 11:INT3453:01 GPIO 0x44000300 0x0003c03a 0x00000000
+pin 12 (LPSS_SPI_2_RXD) 12:INT3453:01 GPIO 0x44000300 0x0003c03b 0x00000000
+pin 13 (LPSS_SPI_2_TXD) 13:INT3453:01 GPIO 0x44000300 0x0003c03c 0x00000000
+pin 14 (FST_SPI_CS0_B) 14:INT3453:01 mode 1 0x44000502 0x00003c3d 0x00000000 [LOCKED, ACPI]
+pin 15 (FST_SPI_CS1_B) 15:INT3453:01 GPIO 0x44000300 0x0003fc3e 0x00000000 [ACPI]
+pin 16 (FST_SPI_MOSI_IO0) 16:INT3453:01 mode 1 0x44000500 0x00003c3f 0x00000000 [LOCKED, ACPI]
+pin 17 (FST_SPI_MISO_IO1) 17:INT3453:01 mode 1 0x44000502 0x00003c40 0x00000000 [LOCKED, ACPI]
+pin 18 (FST_SPI_IO2) 18:INT3453:01 mode 1 0x44000502 0x00003c41 0x00000000 [LOCKED, ACPI]
+pin 19 (FST_SPI_IO3) 19:INT3453:01 mode 1 0x44000502 0x00003c42 0x00000000 [LOCKED, ACPI]
+pin 20 (FST_SPI_CLK) 20:INT3453:01 mode 1 0x44000500 0x00003c43 0x00000000 [LOCKED, ACPI]
+pin 21 (FST_SPI_CLK_FB) 21:INT3453:01 mode 1 0x44000500 0x00003c00 0x00000000 [LOCKED, ACPI]
+pin 22 (PMU_PLTRST_B) 22:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 23 (PMU_PWRBTN_B) 23:INT3453:01 mode 1 0x44000402 0x0003f300 0x00000000 [ACPI]
+pin 24 (PMU_SLP_S0_B) 24:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 25 (PMU_SLP_S3_B) 25:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 26 (PMU_SLP_S4_B) 26:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 27 (SUSPWRDNACK) 27:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 28 (EMMC_DNX_PWR_EN_B) 28:INT3453:01 mode 1 0x44000700 0x00003000 0x00000000 [ACPI]
+pin 29 (GPIO_105) 29:INT3453:01 GPIO 0x44000301 0x00020344 0x00000000
+pin 30 (PMU_BATLOW_B) 30:INT3453:01 mode 1 0x44000402 0x0003f300 0x00000000 [ACPI]
+pin 31 (PMU_RESETBUTTON_B) 31:INT3453:01 mode 1 0x44000402 0x0003f300 0x00000000 [ACPI]
+pin 32 (PMU_SUSCLK) 32:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 33 (SUS_STAT_B) 33:INT3453:01 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 34 (LPSS_I2C5_SDA) 34:INT3453:01 mode 1 0x44000402 0x0003e745 0x00000100 [ACPI]
+pin 35 (LPSS_I2C5_SCL) 35:INT3453:01 mode 1 0x44000402 0x0003e746 0x00000100 [ACPI]
+pin 36 (LPSS_I2C6_SDA) 36:INT3453:01 GPIO 0x44000300 0x0003c047 0x00000100
+pin 37 (LPSS_I2C6_SCL) 37:INT3453:01 GPIO 0x44000300 0x0003c048 0x00000100
+pin 38 (LPSS_I2C7_SDA) 38:INT3453:01 mode 1 0x44000402 0x00022749 0x00000000 [ACPI]
+pin 39 (LPSS_I2C7_SCL) 39:INT3453:01 mode 1 0x44000402 0x0002274a 0x00000000 [ACPI]
+pin 40 (PCIE_WAKE0_B) 40:INT3453:01 mode 1 0x44000402 0x0003f34b 0x00000000 [ACPI]
+pin 41 (PCIE_WAKE1_B) 41:INT3453:01 GPIO 0x40000102 0x0000324c 0x00000000 [ACPI]
+pin 42 (PCIE_WAKE2_B) 42:INT3453:01 GPIO 0x44000000 0x0003f34d 0x00000000 [ACPI]
+pin 43 (PCIE_WAKE3_B) 43:INT3453:01 GPIO 0x44000300 0x0003c04e 0x00000000
+pin 44 (PCIE_CLKREQ0_B) 44:INT3453:01 mode 1 0x44000402 0x0002334f 0x00000000 [ACPI]
+pin 45 (PCIE_CLKREQ1_B) 45:INT3453:01 mode 1 0x44000402 0x00023350 0x00000000 [ACPI]
+pin 46 (PCIE_CLKREQ2_B) 46:INT3453:01 mode 1 0x44000402 0x00023351 0x00000000 [ACPI]
+pin 47 (PCIE_CLKREQ3_B) 47:INT3453:01 GPIO 0x44000300 0x00020352 0x00000000 [ACPI]
+pin 48 (HV_DDI0_DDC_SDA) 48:INT3453:01 mode 1 0x44000400 0x0001c353 0x00000000 [ACPI]
+pin 49 (HV_DDI0_DDC_SCL) 49:INT3453:01 mode 1 0x44000400 0x0001c354 0x00000000 [ACPI]
+pin 50 (HV_DDI1_DDC_SDA) 50:INT3453:01 GPIO 0x44000300 0x0003c055 0x00000100
+pin 51 (HV_DDI1_DDC_SCL) 51:INT3453:01 GPIO 0x44000300 0x0003c056 0x00000100
+pin 52 (PANEL0_VDDEN) 52:INT3453:01 mode 1 0x44000400 0x00005257 0x00000000 [ACPI]
+pin 53 (PANEL0_BKLTEN) 53:INT3453:01 mode 1 0x44000400 0x00005258 0x00000000 [ACPI]
+pin 54 (PANEL0_BKLTCTL) 54:INT3453:01 mode 1 0x44000400 0x00005259 0x00000000 [ACPI]
+pin 55 (HV_DDI0_HPD) 55:INT3453:01 mode 1 0x44000400 0x0002735a 0x00000000 [ACPI]
+pin 56 (HV_DDI1_HPD) 56:INT3453:01 mode 1 0x44000402 0x0002735b 0x00000100 [ACPI]
+pin 57 (HV_EDP_HPD) 57:INT3453:01 mode 1 0x44000402 0x0002435c 0x00000000 [ACPI]
+pin 58 (GPIO_134) 58:INT3453:01 GPIO 0x44000201 0x0003f35d 0x00000100 [ACPI]
+pin 59 (GPIO_135) 59:INT3453:01 GPIO 0x44000201 0x0000325e 0x00000000 [ACPI]
+pin 60 (GPIO_136) 60:INT3453:01 GPIO 0x44000201 0x0000305f 0x00000000 [ACPI]
+pin 61 (GPIO_137) 61:INT3453:01 GPIO 0x44000301 0x0003c060 0x00000000
+pin 62 (GPIO_138) 62:INT3453:01 GPIO 0x44000100 0x00000061 0x00000100
+pin 63 (GPIO_139) 63:INT3453:01 GPIO 0x44000201 0x0003f362 0x00000000 [ACPI]
+pin 64 (GPIO_140) 64:INT3453:01 mode 5 0x44001400 0x00020363 0x00000000 [ACPI]
+pin 65 (GPIO_141) 65:INT3453:01 mode 5 0x44001400 0x00020364 0x00000000 [ACPI]
+pin 66 (GPIO_142) 66:INT3453:01 GPIO 0x44900102 0x00023365 0x00000000
+pin 67 (GPIO_143) 67:INT3453:01 GPIO 0x44000201 0x00003066 0x00000100 [ACPI]
+pin 68 (GPIO_144) 68:INT3453:01 GPIO 0x44000201 0x00003267 0x00000100 [ACPI]
+pin 69 (GPIO_145) 69:INT3453:01 GPIO 0x44000201 0x0003f368 0x00000100 [ACPI]
+pin 70 (GPIO_146) 70:INT3453:01 GPIO 0x44000201 0x0003f369 0x00000100 [ACPI]
+pin 71 (LPC_ILB_SERIRQ) 71:INT3453:01 mode 1 0x44000702 0x0000336a 0x00000100 [ACPI]
+pin 72 (LPC_CLKOUT0) 72:INT3453:01 mode 1 0x44000700 0x0002006b 0x00000100 [ACPI]
+pin 73 (LPC_CLKOUT1) 73:INT3453:01 mode 1 0x44000700 0x0002006c 0x00000100 [ACPI]
+pin 74 (LPC_AD0) 74:INT3453:01 mode 1 0x44000702 0x0002336d 0x00000100 [ACPI]
+pin 75 (LPC_AD1) 75:INT3453:01 mode 1 0x44000702 0x0002336e 0x00000100 [ACPI]
+pin 76 (LPC_AD2) 76:INT3453:01 mode 1 0x44000702 0x0002336f 0x00000100 [ACPI]
+pin 77 (LPC_AD3) 77:INT3453:01 mode 1 0x44000702 0x00023370 0x00000100 [ACPI]
+pin 78 (LPC_CLKRUNB) 78:INT3453:01 mode 1 0x44000700 0x00003071 0x00000100 [ACPI]
+pin 79 (LPC_FRAMEB) 79:INT3453:01 mode 1 0x44000700 0x00023372 0x00000100 [ACPI]
+
+--- INT3453:01/gpio-ranges ---
+GPIO ranges handled:
+0: INT3453:01 GPIOS [592 - 623] PINS [0 - 31]
+32: INT3453:01 GPIOS [624 - 655] PINS [32 - 63]
+64: INT3453:01 GPIOS [656 - 671] PINS [64 - 79]
+
+--- INT3453:01/pinmux-pins ---
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (SVID0_ALERT_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (SVID0_DATA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (SVID0_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (LPSS_SPI_0_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (LPSS_SPI_0_FS0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (LPSS_SPI_0_FS1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (LPSS_SPI_0_RXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (LPSS_SPI_0_TXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (LPSS_SPI_2_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (LPSS_SPI_2_FS0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (LPSS_SPI_2_FS1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (LPSS_SPI_2_FS2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 12 (LPSS_SPI_2_RXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 13 (LPSS_SPI_2_TXD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (FST_SPI_CS0_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 15 (FST_SPI_CS1_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (FST_SPI_MOSI_IO0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 17 (FST_SPI_MISO_IO1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 18 (FST_SPI_IO2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (FST_SPI_IO3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 20 (FST_SPI_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 21 (FST_SPI_CLK_FB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 22 (PMU_PLTRST_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 23 (PMU_PWRBTN_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 24 (PMU_SLP_S0_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 25 (PMU_SLP_S3_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 26 (PMU_SLP_S4_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 27 (SUSPWRDNACK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 28 (EMMC_DNX_PWR_EN_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 29 (GPIO_105): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 30 (PMU_BATLOW_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 31 (PMU_RESETBUTTON_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 32 (PMU_SUSCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 33 (SUS_STAT_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 34 (LPSS_I2C5_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 35 (LPSS_I2C5_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 36 (LPSS_I2C6_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 37 (LPSS_I2C6_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 38 (LPSS_I2C7_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 39 (LPSS_I2C7_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 40 (PCIE_WAKE0_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 41 (PCIE_WAKE1_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 42 (PCIE_WAKE2_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 43 (PCIE_WAKE3_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 44 (PCIE_CLKREQ0_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 45 (PCIE_CLKREQ1_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 46 (PCIE_CLKREQ2_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 47 (PCIE_CLKREQ3_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 48 (HV_DDI0_DDC_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 49 (HV_DDI0_DDC_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 50 (HV_DDI1_DDC_SDA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 51 (HV_DDI1_DDC_SCL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 52 (PANEL0_VDDEN): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 53 (PANEL0_BKLTEN): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 54 (PANEL0_BKLTCTL): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 55 (HV_DDI0_HPD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 56 (HV_DDI1_HPD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 57 (HV_EDP_HPD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 58 (GPIO_134): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 59 (GPIO_135): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 60 (GPIO_136): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 61 (GPIO_137): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 62 (GPIO_138): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 63 (GPIO_139): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 64 (GPIO_140): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 65 (GPIO_141): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 66 (GPIO_142): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 67 (GPIO_143): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 68 (GPIO_144): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 69 (GPIO_145): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 70 (GPIO_146): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 71 (LPC_ILB_SERIRQ): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 72 (LPC_CLKOUT0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 73 (LPC_CLKOUT1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 74 (LPC_AD0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 75 (LPC_AD1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 76 (LPC_AD2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 77 (LPC_AD3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 78 (LPC_CLKRUNB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 79 (LPC_FRAMEB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+--- INT3453:02/pins ---
+registered pins: 20
+pin 0 (AVS_I2S0_MCLK) 0:INT3453:02 GPIO 0x42000100 0x0003d200 0x00000000
+pin 1 (AVS_I2S0_BCLK) 1:INT3453:02 GPIO 0x44000201 0x00003200 0x00000000 [ACPI]
+pin 2 (AVS_I2S0_WS_SYNC) 2:INT3453:02 GPIO 0x44000300 0x0003c000 0x00000000
+pin 3 (AVS_I2S0_SDI) 3:INT3453:02 GPIO 0x44000100 0x00001000 0x00000000 [ACPI]
+pin 4 (AVS_I2S0_SDO) 4:INT3453:02 GPIO 0x44000300 0x0003c000 0x00000000
+pin 5 (AVS_I2S1_MCLK) 5:INT3453:02 GPIO 0x44000100 0x00001000 0x00000000 [ACPI]
+pin 6 (AVS_I2S1_BCLK) 6:INT3453:02 GPIO 0x44000300 0x0003c000 0x00000000
+pin 7 (AVS_I2S1_WS_SYNC) 7:INT3453:02 GPIO 0x44000201 0x0003f300 0x00000000 [ACPI]
+pin 8 (AVS_I2S1_SDI) 8:INT3453:02 GPIO 0x44000100 0x00001000 0x00000000 [ACPI]
+pin 9 (AVS_I2S1_SDO) 9:INT3453:02 GPIO 0x44000201 0x00003200 0x00000000 [ACPI]
+pin 10 (AVS_HDA_BCLK) 10:INT3453:02 mode 1 0x44000400 0x00021200 0x00000000 [ACPI]
+pin 11 (AVS_HDA_WS_SYNC) 11:INT3453:02 mode 1 0x44000400 0x00021200 0x00000000 [ACPI]
+pin 12 (AVS_HDA_SDI) 12:INT3453:02 mode 1 0x44000400 0x00020000 0x00000000 [ACPI]
+pin 13 (AVS_HDA_SDO) 13:INT3453:02 mode 1 0x44000400 0x00021200 0x00000000 [ACPI]
+pin 14 (AVS_HDA_RSTB) 14:INT3453:02 mode 1 0x44000400 0x00021200 0x00000000 [ACPI]
+pin 15 (AVS_M_CLK_A1) 15:INT3453:02 GPIO 0x44000300 0x0003c000 0x00000000
+pin 16 (AVS_M_CLK_B1) 16:INT3453:02 GPIO 0x44000100 0x00001000 0x00000000 [ACPI]
+pin 17 (AVS_M_DATA_1) 17:INT3453:02 GPIO 0x44000300 0x0003c000 0x00000000
+pin 18 (AVS_M_CLK_AB2) 18:INT3453:02 GPIO 0x44000201 0x00003300 0x00000000 [ACPI]
+pin 19 (AVS_M_DATA_2) 19:INT3453:02 GPIO 0x44000100 0x00001000 0x00000000 [ACPI]
+
+--- INT3453:02/gpio-ranges ---
+GPIO ranges handled:
+0: INT3453:02 GPIOS [672 - 691] PINS [0 - 19]
+
+--- INT3453:02/pinmux-pins ---
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (AVS_I2S0_MCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (AVS_I2S0_BCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (AVS_I2S0_WS_SYNC): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (AVS_I2S0_SDI): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (AVS_I2S0_SDO): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (AVS_I2S1_MCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (AVS_I2S1_BCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (AVS_I2S1_WS_SYNC): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (AVS_I2S1_SDI): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (AVS_I2S1_SDO): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (AVS_HDA_BCLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (AVS_HDA_WS_SYNC): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 12 (AVS_HDA_SDI): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 13 (AVS_HDA_SDO): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (AVS_HDA_RSTB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 15 (AVS_M_CLK_A1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (AVS_M_CLK_B1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 17 (AVS_M_DATA_1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 18 (AVS_M_CLK_AB2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (AVS_M_DATA_2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+--- INT3453:03/pins ---
+registered pins: 35
+pin 0 (SMB_ALERTB) 0:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 1 (SMB_CLK) 1:INT3453:03 GPIO 0x44000102 0x0003c000 0x00000000
+pin 2 (SMB_DATA) 2:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 3 (SDCARD_LVL_WP) 3:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 4 (SDCARD_CLK) 4:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 5 (SDCARD_CLK_FB) 5:INT3453:03 mode 1 0x44000400 0x00001200 0x00000000 [ACPI]
+pin 6 (SDCARD_D0) 6:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 7 (SDCARD_D1) 7:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 8 (SDCARD_D2) 8:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 9 (SDCARD_D3) 9:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 10 (SDCARD_CMD) 10:INT3453:03 GPIO 0x44000200 0x0003f300 0x00000000 [ACPI]
+pin 11 (SDCARD_CD_B) 11:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 12 (SDCARD_PWR_DOWN_B) 12:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 13 (GPIO_210) 13:INT3453:03 GPIO 0x44000201 0x0001f200 0x00000000 [ACPI]
+pin 14 (OSC_CLK_OUT_0) 14:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 15 (OSC_CLK_OUT_1) 15:INT3453:03 GPIO 0x44000300 0x0003c000 0x00000000
+pin 16 (CNV_BRI_DT) 16:INT3453:03 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 17 (CNV_BRI_RSP) 17:INT3453:03 mode 1 0x44000402 0x0003f300 0x00000000 [ACPI]
+pin 18 (CNV_RGI_DT) 18:INT3453:03 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 19 (CNV_RGI_RSP) 19:INT3453:03 mode 1 0x44000400 0x0003f300 0x00000000 [ACPI]
+pin 20 (CNV_RF_RESET_B) 20:INT3453:03 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 21 (XTAL_CLKREQ) 21:INT3453:03 mode 1 0x44000400 0x0003c000 0x00000000 [ACPI]
+pin 22 (SDIO_CLK_FB) 22:INT3453:03 mode 2 0x44000b00 0x00001200 0x00000000 [ACPI]
+pin 23 (EMMC0_CLK) 23:INT3453:03 mode 1 0x44000400 0x0001d200 0x00000000 [ACPI]
+pin 24 (EMMC0_CLK_FB) 24:INT3453:03 mode 1 0x44000500 0x00001200 0x00000000 [ACPI]
+pin 25 (EMMC0_D0) 25:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 26 (EMMC0_D1) 26:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 27 (EMMC0_D2) 27:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 28 (EMMC0_D3) 28:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 29 (EMMC0_D4) 29:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 30 (EMMC0_D5) 30:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 31 (EMMC0_D6) 31:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 32 (EMMC0_D7) 32:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 33 (EMMC0_CMD) 33:INT3453:03 mode 1 0x44000402 0x00023300 0x00000000 [ACPI]
+pin 34 (EMMC0_STROBE) 34:INT3453:03 mode 1 0x44000400 0x0001d200 0x00000000 [ACPI]
+
+--- INT3453:03/gpio-ranges ---
+GPIO ranges handled:
+0: INT3453:03 GPIOS [692 - 723] PINS [0 - 31]
+32: INT3453:03 GPIOS [724 - 726] PINS [32 - 34]
+
+--- INT3453:03/pinmux-pins ---
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (SMB_ALERTB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 1 (SMB_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 2 (SMB_DATA): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 3 (SDCARD_LVL_WP): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 4 (SDCARD_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 5 (SDCARD_CLK_FB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 6 (SDCARD_D0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 7 (SDCARD_D1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 8 (SDCARD_D2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 9 (SDCARD_D3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 10 (SDCARD_CMD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 11 (SDCARD_CD_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 12 (SDCARD_PWR_DOWN_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 13 (GPIO_210): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 14 (OSC_CLK_OUT_0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 15 (OSC_CLK_OUT_1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 16 (CNV_BRI_DT): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 17 (CNV_BRI_RSP): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 18 (CNV_RGI_DT): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 19 (CNV_RGI_RSP): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 20 (CNV_RF_RESET_B): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 21 (XTAL_CLKREQ): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 22 (SDIO_CLK_FB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 23 (EMMC0_CLK): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 24 (EMMC0_CLK_FB): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 25 (EMMC0_D0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 26 (EMMC0_D1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 27 (EMMC0_D2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 28 (EMMC0_D3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 29 (EMMC0_D4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 30 (EMMC0_D5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 31 (EMMC0_D6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 32 (EMMC0_D7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 33 (EMMC0_CMD): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 34 (EMMC0_STROBE): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+=== Relevant kernel messages ===
+[    0.283711] pinctrl core: initialized pinctrl subsystem
+[    0.375239] ACPI: EC: EC started
+[    0.375243] ACPI: EC: interrupt blocked
+[    0.478756] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.380801] ACPI: EC: interrupt unblocked
+[    1.380804] ACPI: EC: event unblocked
+[    1.380814] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.380819] ACPI: EC: GPE=0x26

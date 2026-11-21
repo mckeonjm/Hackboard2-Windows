@@ -1,0 +1,1 @@
+ -> /sys/kernel/debug/ec/ec0/io not available (Secure Boot may be blocking debugfs).

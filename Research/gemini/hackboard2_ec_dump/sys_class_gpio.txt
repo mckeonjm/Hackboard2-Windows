@@ -1,0 +1,9 @@
+total 0
+drwxr-xr-x  2 root root    0 Nov 20 22:38 .
+drwxr-xr-x 66 root root    0 Nov 20 22:32 ..
+--w-------  1 root root 4096 Nov 20 22:38 export
+lrwxrwxrwx  1 root root    0 Nov 20 22:32 gpiochip512 -> ../../devices/platform/INT3453:00/gpio/gpiochip512
+lrwxrwxrwx  1 root root    0 Nov 20 22:32 gpiochip592 -> ../../devices/platform/INT3453:01/gpio/gpiochip592
+lrwxrwxrwx  1 root root    0 Nov 20 22:32 gpiochip672 -> ../../devices/platform/INT3453:02/gpio/gpiochip672
+lrwxrwxrwx  1 root root    0 Nov 20 22:32 gpiochip692 -> ../../devices/platform/INT3453:03/gpio/gpiochip692
+--w-------  1 root root 4096 Nov 20 22:38 unexport
