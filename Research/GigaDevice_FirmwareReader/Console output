@@ -1,0 +1,8 @@
+john@Pi4b:~/Documents/FirmwareReader $ /usr/bin/python3 read_firmware.py --speed 100000 firmware.bin
+JEDEC ID: c8 40 14
+Reading flash, pass 1 of 2
+Reading flash, pass 2 of 2
+Saved 1,048,576 bytes to firmware.bin
+SHA-256: 0daa1f256bcadd0046a0e3ef7ff8fde505d087a55492a9bb92f0b0585ac65bc5
+john@Pi4b:~/Documents/FirmwareReader $ ls
+firmware.bin  read_firmware.py  README.md

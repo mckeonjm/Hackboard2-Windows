@@ -35,6 +35,10 @@ The [live Debian inventory](Linux-Inventory.md) is now available. It matches all
 
 ### Factory firmware availability
 
+See the [ITE firmware host-interface analysis](ITE-Firmware-Analysis.md) for the decoded command paths and the evidence tied to the four mapped header pads.
+
+The external GD25Q80E dump obtained on November 21, 2026 contains ITE EC firmware. The 1,048,576-byte file has SHA-256 `0daa1f256bcadd0046a0e3ef7ff8fde505d087a55492a9bb92f0b0585ac65bc5`. At offset zero an 8051-style long jump targets startup code at `0x0070`, which initializes RAM and calls further routines. Embedded strings identify `ITE EC-V14.4`, `ITE Tech. Inc.`, build timestamp `2022/12/03 20:28:42`, and `Intel GLK-MRD`. Most non-erased bytes are in the first 64 KiB, with two additional bytes at `0x10000` and `0x18000`. The remaining bytes are `FF`. This identifies the contents of the external flash. It does not establish whether the chip is loaded on every boot or whether code offers GPIO control to the host.
+
 The Debian flashrom read succeeded and identified an 8 MiB GigaDevice GD25LQ64(B). The saved 8 MiB file contains the descriptor-selected BIOS bytes at `0x001000–0x67EFFF`. The descriptor and the separately declared Device Expansion region (`reg5`, `0x67F000–0x77FFFF`) are zero-filled in this export. Their actual contents remain unknown. The input SHA-256 is `C51B181A5E21B45126D61A7A77A95FACBDBC08889B27912D3C2EB17D7A24AB7F`.
 
 Initial offline extraction used UEFIExtract A76. Its whole-image pass classified a large span as padding, so the firmware volume beginning at flash offset `0x343000` was extracted separately using its declared length of `0x34F000`. The nested `ReFlash` DXE executable contains an EC firmware update option and help text describing an EC area. This is evidence of an update feature in the BIOS executable. It does not establish that the Hackboard uses it, that EC code is included, or that the BIOS programs the EC on normal boot. Initial ASCII and UTF-16LE searches found no explicit IT8987 or header GPIO identifiers in the examined sections. [UEFIExtract release](https://github.com/LongSoft/UEFITool/releases/tag/A76)

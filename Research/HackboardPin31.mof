@@ -1,0 +1,21 @@
+#pragma namespace ("\\\\.\\root\\wmi")
+
+[WMI, Dynamic, Provider("WmiProv"),
+ Guid("{B0D63215-3084-4C8D-8391-FF216376E0A1}")]
+class Hackboard2_Pin31Test
+{
+    [key, read] string InstanceName;
+    [read] boolean Active;
+    [WmiMethodId(1), Implemented, read, write]
+    void ReadPin31([out] uint32 Sample);
+    [WmiMethodId(2), Implemented, read, write]
+    void ReadSnapshotTrace([out, ID(0)] uint32 Status,
+                           [out, ID(1)] uint32 Data0,
+                           [out, ID(2)] uint32 Data1,
+                           [out, ID(3)] uint32 Data2,
+                           [out, ID(4)] uint32 Data3);
+    [WmiMethodId(4), Implemented, read, write]
+    void TestPin31Output([out] uint32 Result);
+    [WmiMethodId(5), Implemented, read, write]
+    void TestPin31OutputHigh([out] uint32 Result);
+};
