@@ -24,7 +24,7 @@ TestResults/
 # Local hardware captures and machine-specific data
 /Research/local/
 /Research/bios/
-/Research/GigaDevice_FirmwareReader/firmware.bin
+#/Research/GigaDevice_FirmwareReader/firmware.bin
 .env
 .env.local
 Thumbs.db
