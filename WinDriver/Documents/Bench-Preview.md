@@ -31,6 +31,8 @@ The example uses physical pin 31 and a 10 kΩ resistor. Confirm the pin holds hi
 
 ## Use from C#
 
+Add a project reference to [HackboardGpio.csproj](../CSLibrary/HackboardGpio.csproj) from your .NET 10 Windows application. The bench example is a separate executable that references the same library.
+
 ```csharp
 using Hackboard2.Gpio;
 

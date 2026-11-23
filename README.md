@@ -35,7 +35,7 @@ Finally, I make no guarantees that any of this works or that it won't screw up y
 
 Follow the [installation and rollback guide](WinDriver/Documents/Bench-Preview.md) to install the temporary ACPI table and register the WMI interface. The beta uses Windows’ built-in ACPI/WMI drivers and requires a test boot and Administrator PowerShell for the example. MOF registration persists across reboots. Run it on installation and when the schema changes.
 
-The [C# bench example](WinDriver/Example_Code/Program.cs) walks through input, sustained high and low output, and release on GPIO6 (physical pin 31).
+To use GPIO from your own .NET 10 Windows project, add a project reference to the [C# library](WinDriver/CSLibrary/HackboardGpio.csproj). The [C# bench example](WinDriver/Example_Code/Program.cs) uses the same library and walks through input, sustained high and low output, and release on GPIO6 (physical pin 31).
 
 ```csharp
 using Hackboard2.Gpio;
