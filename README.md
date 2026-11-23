@@ -31,6 +31,9 @@ Finally, I'm just a guy, so creating signed Windows drivers that you just instal
 
 Finally, I make no guarantees that any of this works or that it won't screw up your Hackboard2.  Use it all at your own risk.  It's mostly made by AI and overseen buy a non-hardware guy who barely knows how any of it works.  You've been warned.
 
+# GPIO is only 3.3V on Hackboard2
+I just wanted to put this in big letters because I'm pretty sure if you send 5V to the GPIO pins, you'll fry the EC.
+
 ## Getting started
 
 Follow the [installation and rollback guide](WinDriver/Documents/Bench-Preview.md) to install the temporary ACPI table and register the WMI interface. The beta uses Windows’ built-in ACPI/WMI drivers and requires a test boot and Administrator PowerShell for the example. MOF registration persists across reboots. Run it on installation and when the schema changes.
@@ -55,6 +58,13 @@ pin.SetInput();
 - **Input reliability.** Each read requests a fresh EC snapshot. A targeted test on pins 7 and 11 matched the meter in all 48 readings, while the broader bench run recorded intermittent disagreements.
 - **Supported scope.** The library exposes the 25 pulse-verified contacts. See the [header map](Research/Header-Continuity-Map.md) for numbering. Physical pins 27 and 28 have unknown routes. Pin 40 showed no physical output pulse.
 - **Cleanup and deployment.** Normal disposal requests input mode after driving a pin. Forced termination can leave an output driven. Normal-boot deployment, configurable pulls, edge events, and hardware I²C, SPI, UART, and PWM remain outside this beta.
+
+## Running your Apps on Windows
+Right-click the app's .EXE in File Explorer and choose Run as administrator. 
+The driver uses a "development" interface to access the Hackboard 2’s hardware pins.
+Windows requires administrator permissions to access "test" drivers.
+If we get to a point where we build a signed production driver, then this will no longer be necessarry.
+See the instructions with the demo C# apps for all the steps to get everything set up.
 
 ## Research and bench records
 
