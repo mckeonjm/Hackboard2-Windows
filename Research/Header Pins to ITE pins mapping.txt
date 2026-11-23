@@ -1,0 +1,28 @@
+Header Pin 3 - ITE Pin 111 - GPIO 2 (SDA)
+Header Pin 5 - ITE Pin 110 - GPIO 3 (SCL)
+Header Pin 7 - ITE Pin 84 - GPIO 4 (GPCLK0)
+Header Pin 8 - ITE Pin 109 - GPIO 14 (TXD)
+Header Pin 10 - ITE Pin 108 - GPIO 15 (RXD)
+Header Pin 11 - ITE Pin 82 - GPIO 17
+Header Pin 12 - ITE Pin 86 - GPIO 18 (PCM_CLK)
+Header Pin 13 - ITE Pin 124 - GPIO 27
+Header Pin 15 - ITE Pin 85 - GPIO 22
+Header Pin 16 - ITE Pin 77 - GPIO 23
+Header Pin 18 - ITE Pin 73 - GPIO 24
+Header Pin 19 - ITE Pin 56 - GPIO 10 (MOSI-GPC3)
+Header Pin 21 - ITE Pin 57 - GPIO 9 (MISO_GPC5)
+Header Pin 22 - ITE Pin 78 - GPIO 25
+Header Pin 23 - ITE Pin 32 - GPIO 11 (SCK_GPA6)
+Header Pin 24 - ITE Pin 100 - GPIO 8 (CE0)
+Header Pin 26 - ITE Pin 125 - GPIO 7 (CE1)
+Header Pin 27 - ITE Pin NONE - GPIO 0 (ID_SD)
+Header Pin 28 - ITE Pin NONE - GPIO 1 (ID_SC)
+Header Pin 29 - ITE Pin 97 - GPIO 5
+Header Pin 31 - ITE Pin 99 - GPIO 6
+Header Pin 32 - ITE Pin 28 - GPIO 12 (PWM0)
+Header Pin 33 - ITE Pin 31 - GPIO 13 (PWM1)
+Header Pin 35 - ITE Pin 94 - GPIO 19 (PCM_FS)
+Header Pin 36 - ITE Pin 90 - GPIO 16
+Header Pin 37 - ITE Pin 18 - GPIO 26
+Header Pin 38 - ITE Pin 117 - GPIO 20 (PCM_DIN)
+Header Pin 40 - ITE Pin 47 - GPIO 21 (PCM_DOUT)

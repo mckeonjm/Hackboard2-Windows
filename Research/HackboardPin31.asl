@@ -44,17 +44,120 @@ DefinitionBlock ("", "SSDT", 2, "HACKBD", "HB2PIN31", 1)
                 {
                     Case (One) { Return (RD31 ()) }
                     Case (2) { Return (TR31 ()) }
-                    Case (4) { Return (PL31 (0x26, One)) }
-                    Case (5) { Return (PL31 (0x27, Zero)) }
+                    Case (4) { Return (PULS (31, 0x26, One)) }
+                    Case (5) { Return (PULS (31, 0x27, Zero)) }
+                    Case (6) { Return (PULS (19, 0x27, 2)) }
+                    Case (7) { Return (PULS (19, 0x26, 2)) }
+                    Case (8) { Return (PULS (21, 0x27, 2)) }
+                    Case (9) { Return (PULS (21, 0x26, 2)) }
+                    Case (10) { Return (PULS (23, 0x27, 2)) }
+                    Case (11) { Return (PULS (23, 0x26, 2)) }
+                    Case (12) { Return (PULS (24, 0x27, 2)) }
+                    Case (13) { Return (PULS (24, 0x26, 2)) }
+                    Case (106) { Return (PULS (3, 0x27, 2)) }
+                    Case (107) { Return (PULS (3, 0x26, 2)) }
+                    Case (110) { Return (PULS (5, 0x27, 2)) }
+                    Case (111) { Return (PULS (5, 0x26, 2)) }
+                    Case (114) { Return (PULS (7, 0x27, 2)) }
+                    Case (115) { Return (PULS (7, 0x26, 2)) }
+                    Case (116) { Return (PULS (8, 0x27, 2)) }
+                    Case (117) { Return (PULS (8, 0x26, 2)) }
+                    Case (120) { Return (PULS (10, 0x27, 2)) }
+                    Case (121) { Return (PULS (10, 0x26, 2)) }
+                    Case (122) { Return (PULS (11, 0x27, 2)) }
+                    Case (123) { Return (PULS (11, 0x26, 2)) }
+                    Case (124) { Return (PULS (12, 0x27, 2)) }
+                    Case (125) { Return (PULS (12, 0x26, 2)) }
+                    Case (126) { Return (PULS (13, 0x27, 2)) }
+                    Case (127) { Return (PULS (13, 0x26, 2)) }
+                    Case (130) { Return (PULS (15, 0x27, 2)) }
+                    Case (131) { Return (PULS (15, 0x26, 2)) }
+                    Case (132) { Return (PULS (16, 0x27, 2)) }
+                    Case (133) { Return (PULS (16, 0x26, 2)) }
+                    Case (136) { Return (PULS (18, 0x27, 2)) }
+                    Case (137) { Return (PULS (18, 0x26, 2)) }
+                    Case (144) { Return (PULS (22, 0x27, 2)) }
+                    Case (145) { Return (PULS (22, 0x26, 2)) }
+                    Case (152) { Return (PULS (26, 0x27, 2)) }
+                    Case (153) { Return (PULS (26, 0x26, 2)) }
+                    Case (158) { Return (PULS (29, 0x27, 2)) }
+                    Case (159) { Return (PULS (29, 0x26, 2)) }
+                    Case (164) { Return (PULS (32, 0x27, 2)) }
+                    Case (165) { Return (PULS (32, 0x26, 2)) }
+                    Case (166) { Return (PULS (33, 0x27, 2)) }
+                    Case (167) { Return (PULS (33, 0x26, 2)) }
+                    Case (170) { Return (PULS (35, 0x27, 2)) }
+                    Case (171) { Return (PULS (35, 0x26, 2)) }
+                    Case (172) { Return (PULS (36, 0x27, 2)) }
+                    Case (173) { Return (PULS (36, 0x26, 2)) }
+                    Case (174) { Return (PULS (37, 0x27, 2)) }
+                    Case (175) { Return (PULS (37, 0x26, 2)) }
+                    Case (176) { Return (PULS (38, 0x27, 2)) }
+                    Case (177) { Return (PULS (38, 0x26, 2)) }
+                    Case (180) { Return (PULS (40, 0x27, 2)) }
+                    Case (181) { Return (PULS (40, 0x26, 2)) }
+                    Case (190) { Return (INPT (7)) }
+                    Case (191) { Return (INPT (11)) }
+                    Case (203) { Return (INPT (3)) }
+                    Case (303) { Return (RDPH (3)) }
+                    Case (205) { Return (INPT (5)) }
+                    Case (305) { Return (RDPH (5)) }
+                    Case (307) { Return (RDPH (7)) }
+                    Case (208) { Return (INPT (8)) }
+                    Case (308) { Return (RDPH (8)) }
+                    Case (210) { Return (INPT (10)) }
+                    Case (310) { Return (RDPH (10)) }
+                    Case (311) { Return (RDPH (11)) }
+                    Case (212) { Return (INPT (12)) }
+                    Case (312) { Return (RDPH (12)) }
+                    Case (213) { Return (INPT (13)) }
+                    Case (313) { Return (RDPH (13)) }
+                    Case (215) { Return (INPT (15)) }
+                    Case (315) { Return (RDPH (15)) }
+                    Case (216) { Return (INPT (16)) }
+                    Case (316) { Return (RDPH (16)) }
+                    Case (218) { Return (INPT (18)) }
+                    Case (318) { Return (RDPH (18)) }
+                    Case (219) { Return (INPT (19)) }
+                    Case (319) { Return (RDPH (19)) }
+                    Case (221) { Return (INPT (21)) }
+                    Case (321) { Return (RDPH (21)) }
+                    Case (222) { Return (INPT (22)) }
+                    Case (322) { Return (RDPH (22)) }
+                    Case (223) { Return (INPT (23)) }
+                    Case (323) { Return (RDPH (23)) }
+                    Case (224) { Return (INPT (24)) }
+                    Case (324) { Return (RDPH (24)) }
+                    Case (226) { Return (INPT (26)) }
+                    Case (326) { Return (RDPH (26)) }
+                    Case (229) { Return (INPT (29)) }
+                    Case (329) { Return (RDPH (29)) }
+                    Case (231) { Return (INPT (31)) }
+                    Case (331) { Return (RDPH (31)) }
+                    Case (232) { Return (INPT (32)) }
+                    Case (332) { Return (RDPH (32)) }
+                    Case (233) { Return (INPT (33)) }
+                    Case (333) { Return (RDPH (33)) }
+                    Case (235) { Return (INPT (35)) }
+                    Case (335) { Return (RDPH (35)) }
+                    Case (236) { Return (INPT (36)) }
+                    Case (336) { Return (RDPH (36)) }
+                    Case (237) { Return (INPT (37)) }
+                    Case (337) { Return (RDPH (37)) }
+                    Case (238) { Return (INPT (38)) }
+                    Case (338) { Return (RDPH (38)) }
+                    Case (240) { Return (INPT (40)) }
+                    Case (340) { Return (RDPH (40)) }
                     Default { Return (5) }
                 }
             }
 
             // Caller supplies a weak bias opposite the requested drive.
-            // Only the two fixed WMI cases can select a drive configuration.
-            Method (PL31, 2, Serialized)
+            // Fixed WMI methods select a continuity-matched pad and drive direction.
+            Method (PULS, 3, Serialized)
             {
-                If (RD31 () != Arg1) { Return (6) }
+                // The operator checks the starting voltage for the other pins.
+                If ((Arg2 != 2) && (RD31 () != Arg2)) { Return (6) }
                 If (Acquire (\_SB.PCI0.SBRG.H_EC.ECMT, 0x03E8)) { Return (4) }
 
                 Local0 = 2
@@ -65,11 +168,21 @@ DefinitionBlock ("", "SSDT", 2, "HACKBD", "HB2PIN31", 1)
                     {
                         Local1 = \_SB.PCI0.SBRG.H_EC.HSEL
                         Local2 = \_SB.PCI0.SBRG.H_EC.HCFG
-                        \_SB.PCI0.SBRG.H_EC.HSEL = 31
-                        \_SB.PCI0.SBRG.H_EC.HCFG = Arg0
+                        \_SB.PCI0.SBRG.H_EC.HSEL = Arg0
+                        \_SB.PCI0.SBRG.H_EC.HCFG = Arg1
                         \_SB.PCI0.SBRG.H_EC.HSCR = 0xAA
                         Local3 = WACK ()
-                        If (Local3 == 0x55) { Sleep (1000) }
+                        Local5 = Zero
+                        If (Local3 == 0x55)
+                        {
+                            Sleep (1000)
+                            If (Arg2 == 2)
+                            {
+                                // Sample the predicted bitmap byte while the drive is active.
+                                Local6 = (((Arg0 - One) >> 3) << 3)
+                                Local5 = (0x01000000 | (((\_SB.PCI0.SBRG.H_EC.HSBM >> Local6) & 0xFF) << 16))
+                            }
+                        }
 
                         // Always request input, including after an uncertain write.
                         // Mode 1 selects input. Mode 0 skips the direction change.
@@ -79,10 +192,34 @@ DefinitionBlock ("", "SSDT", 2, "HACKBD", "HB2PIN31", 1)
                         \_SB.PCI0.SBRG.H_EC.HSCR = Zero
                         \_SB.PCI0.SBRG.H_EC.HCFG = Local2
                         \_SB.PCI0.SBRG.H_EC.HSEL = Local1
-                        Local0 = (Local3 | (Local4 << 8))
+                        Local0 = (Local3 | (Local4 << 8) | Local5)
                     }
                 }
 
+                Release (\_SB.PCI0.SBRG.H_EC.ECMT)
+                Return (Local0)
+            }
+
+            Method (INPT, 1, Serialized)
+            {
+                If (Acquire (\_SB.PCI0.SBRG.H_EC.ECMT, 0x03E8)) { Return (4) }
+                Local0 = 2
+                If (\_SB.PCI0.SBRG.H_EC.ECAV)
+                {
+                    Local0 = 3
+                    If (\_SB.PCI0.SBRG.H_EC.HSCR == Zero)
+                    {
+                        Local1 = \_SB.PCI0.SBRG.H_EC.HSEL
+                        Local2 = \_SB.PCI0.SBRG.H_EC.HCFG
+                        \_SB.PCI0.SBRG.H_EC.HSEL = Arg0
+                        \_SB.PCI0.SBRG.H_EC.HCFG = 0x25
+                        \_SB.PCI0.SBRG.H_EC.HSCR = 0xAA
+                        Local0 = WACK ()
+                        \_SB.PCI0.SBRG.H_EC.HSCR = Zero
+                        \_SB.PCI0.SBRG.H_EC.HCFG = Local2
+                        \_SB.PCI0.SBRG.H_EC.HSEL = Local1
+                    }
+                }
                 Release (\_SB.PCI0.SBRG.H_EC.ECMT)
                 Return (Local0)
             }
@@ -102,15 +239,19 @@ DefinitionBlock ("", "SSDT", 2, "HACKBD", "HB2PIN31", 1)
             // 3 when the mailbox is occupied, and 4 on a mutex timeout.
             Method (RD31, 0, Serialized)
             {
+                Return (RDPH (31))
+            }
+
+            // Levels use the observed one-position selector-to-bitmap offset.
+            Method (RDPH, 1, Serialized)
+            {
                 Local0 = TR31 ()
                 CreateByteField (Local0, Zero, STAT)
-                CreateByteField (Local0, 17, PINB)
-                If (STAT == Zero)
-                {
-                    // Physical pin 31 toggled mask 0x40 in the live Windows trace.
-                    Return ((PINB & 0x40) >> 6)
-                }
-                Return (STAT)
+                If (STAT != Zero) { Return (STAT) }
+
+                Local1 = Arg0 - One
+                Local2 = DerefOf (Index (Local0, 14 + (Local1 >> 3)))
+                Return ((Local2 >> (Local1 & 7)) & One)
             }
 
             // Five DWORDs returned through WMI. The first is the status.

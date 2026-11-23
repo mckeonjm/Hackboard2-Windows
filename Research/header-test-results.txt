@@ -1,0 +1,498 @@
+﻿
+Run 2026-11-22T12:44:36.6604718-05:00 | physical pin 19 | GPIO10 / MOSI | candidate EC 0x46 mask 0x04
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Run complete
+
+Run 2026-11-22T12:58:45.9630358-05:00 | physical pin 19 | GPIO10 / MOSI | candidate EC 0x46 mask 0x04
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive high and release | scope=Saw expected 0 V -> high -> 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x10
+Drive low and release | scope=Saw expected High -> near 0 V -> high | candidate=HIGH | snapshot=14-00-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Run complete
+
+Run 2026-11-22T13:02:20.7167348-05:00 | physical pin 21 | GPIO9 / MISO | candidate EC 0x46 mask 0x10
+Baseline | meter=Other voltage or unstable | candidate=HIGH | snapshot=14-00-14-00-00
+  Note: 2.6v
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=14-00-04-00-00
+Release | meter=Other voltage or unstable | candidate=HIGH | snapshot=14-00-14-00-00
+  Note: 2.6
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive high and release | scope=Saw expected 0 V -> high -> 0 V | candidate=LOW | snapshot=14-00-04-00-00
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x04
+Drive low and release | scope=Saw expected High -> near 0 V -> high | candidate=HIGH | snapshot=14-00-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=14-00-04-00-00
+Run complete
+
+Run 2026-11-22T13:05:32.3078210-05:00 | physical pin 24 | GPIO8 / CE0 | bitmap capture; mapping unknown
+Baseline | meter=Other voltage or unstable | candidate=unmapped | snapshot=14-00-14-00-00
+  Note: 1v
+Pull-up | meter=Near 3 V | candidate=unmapped | snapshot=14-00-94-00-00
+Release | meter=Other voltage or unstable | candidate=unmapped | snapshot=14-00-14-00-00
+  Note: 1v
+Run complete
+
+Run 2026-11-22T13:26:08.8635225-05:00 | physical pin 23 | GPIO11 / SCK | candidate EC 0x46 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=14-00-50-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x50
+Drive high and release | scope=Saw expected 0 V -> high -> 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x10
+Drive low and release | scope=Saw expected High -> near 0 V -> high | candidate=HIGH | snapshot=14-00-50-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-50-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Run complete
+
+Run 2026-11-22T13:28:19.2513626-05:00 | physical pin 24 | GPIO8 / CE0 | candidate EC 0x46 mask 0x80
+Baseline | meter=Other voltage or unstable | candidate=LOW | snapshot=14-00-10-00-00
+  Note: 1v
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=14-00-90-00-00
+Release | meter=Other voltage or unstable | candidate=LOW | snapshot=14-00-10-00-00
+  Note: 1v
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x90
+Drive high and release | scope=Saw expected 0 V -> high -> 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x10
+Drive low and release | scope=Saw expected High -> near 0 V -> high | candidate=HIGH | snapshot=14-00-90-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-90-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Run complete
+
+Run 2026-11-22T20:50:25.7316209-05:00 | physical pin 3 | GPIO 2 (SDA) | selector 3 | EC 0x44 mask 0x04
+Baseline | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Release | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x14
+Drive high and release | scope=Other or uncertain waveform | candidate=HIGH | snapshot=14-00-10-00-00
+  Note: 1.7 v then 3.3v then 1.7v
+Run stopped after an unverified drive or release.
+
+Run 2026-11-22T20:58:18.8617450-05:00 | physical pin 3 | GPIO 2 (SDA) | selector 3 | EC 0x44 mask 0x04
+Baseline | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Release | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Drive high and release | biased starting voltage=1.7 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x14
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=14-00-10-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x10
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=14-00-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Input with pull-down after output | meter=Other voltage or unstable | candidate=HIGH | snapshot=14-00-10-00-00
+  Note: 1.7
+Run complete
+
+Run 2026-11-22T21:00:21.6849356-05:00 | physical pin 5 | GPIO 3 (SCL) | selector 5 | EC 0x44 mask 0x10
+Baseline | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Release | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Drive high and release | biased starting voltage=1.7 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x14
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=14-00-10-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x04
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=14-00-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=14-00-10-00-00
+Input with pull-down after output | meter=Other voltage or unstable | candidate=HIGH | snapshot=14-00-10-00-00
+  Note: 1.7
+Run complete
+
+Run 2026-11-22T21:02:30.6017058-05:00 | physical pin 7 | GPIO 4 (GPCLK0) | selector 7 | EC 0x44 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=14-00-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x54
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=14-00-10-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x14
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=14-00-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=54-00-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Run complete
+
+Run 2026-11-22T21:04:23.6646634-05:00 | physical pin 8 | GPIO 14 (TXD) | selector 8 | EC 0x44 mask 0x80
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=14-00-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x94
+Stopped at Drive high and release
+
+Run 2026-11-22T21:09:14.7394927-05:00 | physical pin 8 | GPIO 14 (TXD) | selector 8 | EC 0x44 mask 0x80
+Baseline | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-00-10-00-00
+  Note: 2.5
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=94-00-10-00-00
+Release | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-00-10-00-00
+  Note: 2.5
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x94
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=94-00-10-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x14
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-00-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-00-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=HIGH | snapshot=94-00-10-00-00
+Run complete
+
+Run 2026-11-22T21:11:00.0936899-05:00 | physical pin 10 | GPIO 15 (RXD) | selector 10 | EC 0x45 mask 0x02
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-00-10-00-00
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=94-00-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-00-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-00-10-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=HIGH | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:12:48.6635637-05:00 | physical pin 11 | GPIO 17 | selector 11 | EC 0x45 mask 0x04
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x06
+Drive high and release | scope=Returned to starting voltage; repeat requested | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x06
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:15:14.8570846-05:00 | physical pin 12 | GPIO 18 (PCM_CLK) | selector 12 | EC 0x45 mask 0x08
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x0A
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:16:35.6936526-05:00 | physical pin 13 | GPIO 27 | selector 13 | EC 0x45 mask 0x10
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x12
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=2.99 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:18:11.9890823-05:00 | physical pin 15 | GPIO 22 | selector 15 | EC 0x45 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x42
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:19:53.1932847-05:00 | physical pin 16 | GPIO 23 | selector 16 | EC 0x45 mask 0x80
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x82
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=2.99 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x45 during drive=0x02
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:21:59.5623536-05:00 | physical pin 18 | GPIO 24 | selector 18 | EC 0x46 mask 0x02
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x12
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Drive low and release | biased starting voltage=2.99 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x10
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-10-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-12-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:22:59.3752666-05:00 | physical pin 19 | GPIO 10 (MOSI) | selector 19 | EC 0x46 mask 0x04
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Pull-up | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x10
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-10-00-00
+Run complete
+
+Run 2026-11-22T21:25:24.1677116-05:00 | physical pin 21 | GPIO 9 (MISO) | selector 21 | EC 0x46 mask 0x10
+Baseline | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-02-14-00-00
+  Note: 2.6
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-00
+Release | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-02-14-00-00
+  Note: 2.6
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x04
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=HIGH | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:27:47.6852499-05:00 | physical pin 22 | GPIO 25 | selector 22 | EC 0x46 mask 0x20
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x34
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:29:04.0962224-05:00 | physical pin 23 | GPIO 11 (SCK) | selector 23 | EC 0x46 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x54
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-54-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-54-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:30:03.0358674-05:00 | physical pin 24 | GPIO 8 (CE0) | selector 24 | EC 0x46 mask 0x80
+Baseline | meter=Other voltage or unstable | candidate=LOW | snapshot=94-02-14-00-00
+  Note: 1
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Other voltage or unstable | candidate=LOW | snapshot=94-02-14-00-00
+  Note: 1
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x94
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x46 during drive=0x14
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:31:47.4048797-05:00 | physical pin 26 | GPIO 7 (CE1) | selector 26 | EC 0x47 mask 0x02
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x02
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:32:51.7396983-05:00 | physical pin 27 | GPIO 0 (ID_SD) | passive voltage only; EC selector unknown
+Baseline | meter=Other voltage or unstable | No EC selector
+  Note: 0.68
+Run complete
+
+Run 2026-11-22T21:33:29.6308789-05:00 | physical pin 28 | GPIO 1 (ID_SC) | passive voltage only; EC selector unknown
+Baseline | meter=Other voltage or unstable | No EC selector
+  Note: 0.65
+Run complete
+
+Run 2026-11-22T21:34:53.4799252-05:00 | physical pin 29 | GPIO 5 | selector 29 | EC 0x47 mask 0x10
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x10
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-10-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-10-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-10-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:35:58.1689414-05:00 | physical pin 31 | GPIO 6 | selector 31 | EC 0x47 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:37:15.7411512-05:00 | physical pin 32 | GPIO 12 (PWM0) | selector 32 | EC 0x47 mask 0x80
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x80
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x47 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:38:25.0138755-05:00 | physical pin 33 | GPIO 13 (PWM1) | selector 33 | EC 0x48 mask 0x01
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x01
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:39:24.9151135-05:00 | physical pin 35 | GPIO 19 (PCM_FS) | selector 35 | EC 0x48 mask 0x04
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x04
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-04
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:40:28.8623378-05:00 | physical pin 36 | GPIO 16 | selector 36 | EC 0x48 mask 0x08
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-02-14-00-08
+  Note: 1.55
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x08
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=1.56 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Other voltage or unstable | candidate=HIGH | snapshot=94-02-14-00-08
+  Note: 1.56
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:42:29.6731239-05:00 | physical pin 37 | GPIO 26 | selector 37 | EC 0x48 mask 0x10
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x10
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-10
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:43:43.2168059-05:00 | physical pin 38 | GPIO 20 (PCM_DIN) | selector 38 | EC 0x48 mask 0x20
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-20
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x20
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-00-20
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-00-20
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:44:36.8585172-05:00 | physical pin 40 | GPIO 21 (PCM_DOUT) | selector 40 | EC 0x48 mask 0x80
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x80
+Drive high and release | scope=No pulse observed | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3.3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x48 during drive=0x00
+Drive low and release | scope=No pulse observed | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:56:27.2059674-05:00 | physical pin 7 | GPIO 4 (GPCLK0) | selector 7 | EC 0x44 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=LOW | snapshot=94-02-14-00-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55 | EC 0x44 during drive=0xD4
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55 | EC 0x44 during drive=0x94
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=D4-02-14-00-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=D4-02-14-00-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete
+
+Run 2026-11-22T21:57:29.2250208-05:00 | physical pin 31 | GPIO 6 | selector 31 | EC 0x47 mask 0x40
+Baseline | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Pull-up | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-40-00
+Release | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Drive high and release | biased starting voltage=0 V
+Drive high and release | drive=0x55 release=0x55
+Drive high and release | scope=Saw expected Rises, then returns to the starting voltage | candidate=LOW | snapshot=94-02-14-00-00
+Drive low and release | biased starting voltage=3 V
+Drive low and release | drive=0x55 release=0x55
+Drive low and release | scope=Saw expected Falls, then returns to the starting voltage | candidate=HIGH | snapshot=94-02-14-40-00
+Input with pull-up after output | meter=Near 3 V | candidate=HIGH | snapshot=94-02-14-40-00
+Input with pull-down after output | meter=Near 0 V | candidate=LOW | snapshot=94-02-14-00-00
+Run complete

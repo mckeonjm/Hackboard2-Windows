@@ -1,5 +1,7 @@
 # Hackboard 2 header routing
 
+The [full continuity map](Header-Continuity-Map.md) contains the November 22 survey of all 28 signal contacts and supersedes earlier routing hypotheses below.
+
 ## External ITE flash lead
 
 On November 21, 2026, the board owner measured continuity from IT8987E lead 102 (`FMOSI/GPG4`) to lead 5 (`SI/IO0`) of the GigaDevice chip marked `25Q80ES1G`. This is the expected data-out to data-in connection for the ITE's external flash interface. The 8-Mbit GD25Q80E holds 1 MiB and is a separate device from the 8 MiB GD25LQ64(B) identified by the host BIOS read. Its contents and role at boot remain unknown. [IT8987E/BX schematic](https://forums.futura-sciences.com/attachments/materiel-hardware/384315d1551389528-reparation-carte-mere-hp-vinafix.com_quanta-x12_6l-r1a.pdf#page=30) · [GigaDevice GD25Q80E datasheet](https://www.mouser.com/datasheet/2/870/DS_00478_GD25Q80E_Rev1_3-3435732.pdf)
@@ -14,10 +16,11 @@ The board owner reported the following unpowered connections on November 20, 202
 | --- | --- | ---: | --- |
 | 19 | GPIO 10 / MOSI / GPC3 | 56 | GPC3 / SMOSI |
 | 21 | GPIO 9 / MISO / GPC5 | 57 | GPC5 / SMISO |
-| 23 | GPIO 11 / SCK / GPA6 | 100 | GPG2 / SSCE0# |
+| 23 | GPIO 11 / SCK / GPA6 | 32 | GPA6 / SSCK |
+| 24 | GPIO 8 / CE0 | 100 | GPG2 / SSCE0# |
 | 31 | GPIO 6 | 99 | GPH6 / HMOSI / ID6 |
 
-Lead 100 is fourth from the top on the left edge with the package text upright. The card's GPA6 would be lead 32. The measured route supersedes that proposed assignment. The reference names lead 100 as a chip-select alternate function. Its active function on this board remains unknown. [IT8987E/BX reference schematic, page 30](https://forums.futura-sciences.com/attachments/materiel-hardware/384315d1551389528-reparation-carte-mere-hp-vinafix.com_quanta-x12_6l-r1a.pdf#page=30)
+On November 22 the owner repeated continuity and corrected the earlier identification of pins 23 and 24. Lead 100 is fourth from the top on the left edge with the package text upright. The pad alternate-function names agree with the card. The active mux and hardware SPI operation remain unverified. [IT8987E/BX reference schematic, page 30](https://forums.futura-sciences.com/attachments/materiel-hardware/384315d1551389528-reparation-carte-mere-hp-vinafix.com_quanta-x12_6l-r1a.pdf#page=30)
 
 The board owner measured 3.3 V at ITE lead 106 with the board powered on. The package reference identifies lead 106 as `VSTBY_FSPI`. This records the voltage at that supply lead in the measured state. The voltage limits for the mapped GPIO pads and the programming interface remain unverified. [IT8987E/BX reference schematic, page 30](https://forums.futura-sciences.com/attachments/materiel-hardware/384315d1551389528-reparation-carte-mere-hp-vinafix.com_quanta-x12_6l-r1a.pdf#page=30)
 
@@ -29,7 +32,7 @@ Three pin-card labels point to the ITE embedded controller as the leading routin
 | 21 | GPIO 9 / MISO | ITE8987 `GPC5` / `SMISO` |
 | 23 | GPIO 11 / SCK | ITE8987 `GPA6` / `SSCK` |
 
-Source for the first two columns is the [supplied pin card transcription](Hackboard2-GPIO-pinout.txt). The remaining signals, including SPI chip selects on pins 24 and 26, still have unknown controller routing. The card does not establish logic voltage, mux state, or whether the EC firmware permits application control.
+Source for the first two columns is the [supplied pin card transcription](Hackboard2-GPIO-pinout.txt). The remaining signals, including SPI chip select on pin 26, still have unknown controller routing. The card does not establish logic voltage, mux state, or whether the EC firmware permits application control.
 
 ## Board photo evidence
 

@@ -16,7 +16,7 @@ The internal register addresses below are hypotheses derived from a **related IT
 | --- | --- | --- | --- |
 | 19 | GPC3 | `0x1623` | A routine starting at `0x9CB8` writes zero to this address and reads it back. |
 | 21 | GPC5 | `0x1625` | The same routine writes zero to this address and reads it back. |
-| 23 | GPG2 | `0x1642` | No direct literal DPTR load of this address found. |
+| 24 | GPG2 | `0x1642` | No direct literal DPTR load of this address found. |
 | 31 | GPH6 | `0x164E` | Code at `0xF2D8` writes `0x80` here after writing the same value to three adjacent candidate H-port control addresses. |
 
 The dump also contains repeated internal accesses at `0x1603`, `0x1607`, and `0x1608`, consistent with the candidate data registers for GPIO groups C, G, and H. The directly examined bit operations did not establish a host path for the mapped C3, C5, G2, or H6 bits. Literal searches miss indexed register tables and computed addresses. The write observed for H6 resembles input setup on the related part, but its conditions, execution on the live board, and current pin configuration remain unverified.
@@ -25,13 +25,14 @@ The dump also contains repeated internal accesses at `0x1603`, `0x1607`, and `0x
 
 ### GPIO snapshot found in the dump
 
-The second pass found a 40-entry, 12-byte-per-entry table at code offset `0x26E6`. Each row starts with its index. Rows 19, 21, and 31 match the corresponding measured header contacts, which corroborates the candidate register map independently of the related-chip datasheet. The row at index 23 contains `GPA6`. Index 24 contains `GPG2`, which continuity places at physical contact 23 on this specimen. Keep the firmware index and physical header number distinct for that case.
+The second pass found a 40-entry, 12-byte-per-entry table at code offset `0x26E6`. Each row starts with its index. Rows 19, 21, and 31 match the corresponding measured header contacts, which corroborates the candidate register map independently of the related-chip datasheet. The row at index 23 contains `GPA6`. Index 24 contains `GPG2`. The repeated continuity check places these pads at physical contacts 23 and 24 respectively.
 
 | Physical contact | Verified pad | Firmware index | Data register and mask | Snapshot byte and mask in host EC space |
 | --- | --- | ---: | --- | --- |
 | 19 | GPC3 | 19 | `0x1603` / `0x08` | `0x46` / `0x08` |
 | 21 | GPC5 | 21 | `0x1603` / `0x20` | `0x46` / `0x20` |
-| 23 | GPG2 | 24 | `0x1607` / `0x04` | `0x47` / `0x01` |
+| 23 | GPA6 | 23 | `0x1601` / `0x40` | `0x46` / `0x40` candidate from live indexing |
+| 24 | GPG2 | 24 | `0x1607` / `0x04` | `0x46` / `0x80` observed live |
 | 31 | GPH6 | 31 | `0x1608` / `0x40` | `0x47` / `0x40` observed live. Static prediction was `0x80`. |
 
 Code at `0xBB26` checks the GPIO request/status byte and, in the snapshot branch, clears five host-visible bytes before walking the table. For each valid entry it reads the data register, applies the row mask, and sets the indexed bit in the host-visible bitmap. The function entry is referenced by the firmware function table via the jump at `0xBED7`. This is specific firmware evidence of a GPIO-to-host data path, beyond the earlier literal register scan. Static analysis has not confirmed that the factory firmware runs this service under normal Windows, how frequently the bitmap refreshes, or whether there is a reliable freshness signal. The stock DSDT does not name these snapshot bytes in the EC field list.
@@ -92,3 +93,9 @@ After a cold boot, the owner measured 3.0 V with the pull-up attached before run
 The owner confirmed a 3 V to 0 V to 3 V transition on the corrected run. With only the weak pull-up connected, this verifies both drive-low and return to input. The complementary drive-high probe uses a weak pull-down, a LOW preflight, and the same verified input release command. Live drive-high remains unverified.
 
 The owner confirmed the complementary test returned `drive=0x55 release=0x55` and measured 0 V to 3.3 V to 0 V with the 10 kΩ pull-down attached. This verifies sourcing current into the pull-down and release to input on physical pin 31. With the current test table and MOF installed, the C# prototype exposes the same commands as `HackboardGpio.Pulse(6, PinValue.Low)` and `HackboardGpio.Pulse(6, PinValue.High)`. From Administrator PowerShell in `Research`, use `dotnet run --project .\Pin31Reader -- pulse-low` with the pull-up or `dotnet run --project .\Pin31Reader -- pulse-high` with the pull-down.
+
+### Alternate-function evidence
+
+The GPIO configuration handler at `0xBA26` has an optional branch controlled by the upper nibble of the configuration byte. For selectors 3/5 and 8/10, the table points this branch at the Port B alternate-control register `0x1672`. Selectors 23, 32, and 33 point at the corresponding Port A register `0x1671`. These operations act on pad configuration. The observed handler does not take a bus address, baud rate, SPI transaction, or PWM period and duty cycle. The bench pulse configurations intentionally skip the optional branch.
+
+Selectors 13, 18, 19, 21, 24, and 26 jump past the optional branch. In particular, four of the five SPI contacts bypass it even though all five have matching hardware alternate functions in the package reference. A GPIO mailbox mode change alone is therefore insufficient evidence for a usable hardware SPI path. No application-facing I²C/SMBus, UART, SPI, or PWM operation for these header pins has been identified in the dump. See the [continuity map](Header-Continuity-Map.md) for pad and card-label comparisons.
